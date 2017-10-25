@@ -2,6 +2,7 @@ from sklearn.datasets import load_digits  # 手写数字的加载包
 from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import LinearSVC
+from sklearn.metrics import classification_report
 
 digits = load_digits()  # 读取数据
 print(digits.data.shape)  # (1797, 64) size of 8x8
@@ -25,3 +26,5 @@ lsvc.fit(X_train,Y_train)
 y_predict=lsvc.predict(X_test)
 #使用自带的“打分”
 print("Accuracy :",lsvc.score(X_test,Y_test))
+
+print(classification_report(Y_test,y_predict,target_names=digits.target_names.astype(str)))
