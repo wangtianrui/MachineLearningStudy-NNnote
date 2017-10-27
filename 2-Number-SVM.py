@@ -7,6 +7,7 @@ from sklearn.metrics import classification_report
 digits = load_digits()  # 读取数据
 print(digits.data.shape)  # (1797, 64) size of 8x8
 
+
 X_train, X_test, Y_train, Y_test = train_test_split(digits.data, digits.target, test_size=0.25, random_state=33)
 
 print(X_train.shape, X_test.shape, Y_train.shape, Y_test.shape)

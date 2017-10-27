@@ -27,6 +27,8 @@ data = data.dropna(how='any')
 
 print(data.shape)
 
+
+
 #用于分割数据集
 # train_test_split 将数组或矩阵拆分为随机列和测试子集
 '''
@@ -37,6 +39,9 @@ random_state:编号，随机数种子：其实就是该组随机数的编号，�
 
 比如：random_state=非0数   那么只要每次数字一样就能得到同样的分类
       random_state=0   那么每次都是不同的
+
+第一个参数是样本集合
+第二个参数是样本对于的Lable
 '''
 X_train , X_test  , y_train , y_test = train_test_split(data[column_names[1:10]],data[column_names[10]],test_size=0.25
                                                         ,random_state=0)
