@@ -220,7 +220,29 @@ avg / total       0.78      0.78      0.77       329
 #### 2-Titanic-Forest.py
 
 ```txt
+Accuracy: 0.781155015198
+             precision    recall  f1-score   support
 
+          0       0.78      0.91      0.84       202
+          1       0.80      0.58      0.67       127
+
+avg / total       0.78      0.78      0.77       329
+
+Accuracy: 0.775075987842
+             precision    recall  f1-score   support
+
+          0       0.77      0.91      0.83       202
+          1       0.79      0.57      0.66       127
+
+avg / total       0.78      0.78      0.77       329
+
+Accuracy: 0.790273556231
+             precision    recall  f1-score   support
+
+          0       0.78      0.92      0.84       202
+          1       0.82      0.58      0.68       127
+
+avg / total       0.80      0.79      0.78       329
 
 ```
 >集成分类器，各个分类器之间相互作用
