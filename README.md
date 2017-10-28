@@ -194,3 +194,25 @@ Accuracy: 0.894736842105
 avg / total       0.92      0.89      0.90        38
 
 ```
+#### 2-Titanic-Tree.py
+
+```txt
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1313 entries, 0 to 1312
+Data columns (total 3 columns):
+pclass    1313 non-null object
+age       1313 non-null float64
+sex       1313 non-null object
+dtypes: float64(1), object(2)
+memory usage: 30.9+ KB
+None
+['age', 'pclass=1st', 'pclass=2nd', 'pclass=3rd', 'sex=female', 'sex=male']
+Accuracy: 0.781155015198
+             precision    recall  f1-score   support
+
+       died       0.78      0.91      0.84       202
+   survived       0.80      0.58      0.67       127
+
+avg / total       0.78      0.78      0.77       329
+
+```
