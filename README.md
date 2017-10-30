@@ -1,6 +1,6 @@
 # MachineLearningStudy
 
-#### 2-BreastCancer-logistic&SGD.py
+## 2-BreastCancer-logistic&SGD.py
 
 >线性分类器（考虑所有样本）
 
@@ -36,7 +36,7 @@ avg / total       0.97      0.96      0.96       171
 >SGD则是由求导进行梯度训练
 
 
-#### 2-Number-SVM.py
+## 2-Number-SVM.py
 
 >线性分类器（考虑代表性样本）
 
@@ -63,7 +63,7 @@ avg / total       0.95      0.95      0.95       450
 >相对于logistic与SDC，SVM是通过两个样本的位子来确定分类器，向量的位置不是受所有样本影响，而是两个空间间隔最小的样本
 
 
-#### 2-News-Bayes.py
+## 2-News-Bayes.py
 
 >朴素贝叶斯分类器，单独考虑每一个维度的特征（大多用于文本分类）
 
@@ -115,7 +115,7 @@ comp.sys.ibm.pc.hardware       0.60      0.88      0.72       240
              avg / total       0.86      0.84      0.82      4712
 ```
 
-#### 2-Iris-KNeighbors.py
+## 2-Iris-KNeighbors.py
 
 >利用预设值K，对样本进行分类，该模型没有训练过程
 
@@ -194,7 +194,7 @@ Accuracy: 0.894736842105
 avg / total       0.92      0.89      0.90        38
 
 ```
-#### 2-Titanic-Tree.py
+## 2-Titanic-Tree.py
 
 ```txt
 <class 'pandas.core.frame.DataFrame'>
@@ -217,7 +217,7 @@ avg / total       0.78      0.78      0.77       329
 
 ```
 
-#### 2-Titanic-Forest.py
+## 2-Titanic-Forest.py
 
 ```txt
 Accuracy: 0.781155015198
@@ -247,7 +247,7 @@ avg / total       0.80      0.79      0.78       329
 ```
 >集成分类器，各个分类器之间相互作用
 
-#### 2-Boston-LinearRegressorLogistic&SGD.py
+## 2-Boston-LinearRegressorLogistic&SGD.py
 
 ```txt
 Boston House Prices dataset
@@ -320,7 +320,7 @@ mean-absoluate-error: 0.382193609163
 
 ```
 
-#### 2-Boston-LinearRegressorSVM.py
+## 2-Boston-LinearRegressorSVM.py
 
 ```txt
 ############################################
@@ -336,4 +336,10 @@ R-squared: 0.756406891227
 mean-squared-error: 0.21933948892
 mean-absoluate-error: 0.280992190922
 ############################################
+```
+
+## 2-Boston-RegressorKNeighbor.py
+
+```txt
+
 ```
