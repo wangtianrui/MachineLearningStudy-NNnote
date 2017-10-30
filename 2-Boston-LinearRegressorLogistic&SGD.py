@@ -34,12 +34,12 @@ sgdr = SGDRegressor()
 sgdr.fit(x_train, y_train)
 sgdr_y_predict = sgdr.predict(x_test)
 
-print("Accuracy of lr:", lr.score(x_test, y_test))
+
 print("R-squared:",r2_score(y_test,lr_y_predict))
 print("mean-squared-error:",mean_squared_error(y_test,lr_y_predict))
 print("mean-absoluate-error:",mean_absolute_error(y_test,lr_y_predict))
 
-print("Accuracy of sgdr:", sgdr.score(x_test, y_test))
+
 print("R-squared:",r2_score(y_test,sgdr_y_predict))
 print("mean-squared-error:",mean_squared_error(y_test,sgdr_y_predict))
 print("mean-absoluate-error:",mean_absolute_error(y_test,sgdr_y_predict))

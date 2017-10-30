@@ -309,13 +309,31 @@ the min target value is 5.0
 the average target value is 22.5328063241
 
 
-Accuracy of lr: 0.6763403831
+
 R-squared: 0.6763403831
 mean-squared-error: 0.29143408577
 mean-absoluate-error: 0.379976703913
-Accuracy of sgdr: 0.6579355574
+
 R-squared: 0.6579355574
 mean-squared-error: 0.30800641445
 mean-absoluate-error: 0.382193609163
 
+```
+
+#### 2-Boston-LinearRegressorSVM.py
+
+```txt
+############################################
+R-squared: 0.65171709743
+mean-squared-error: 0.31360572651
+mean-absoluate-error: 0.369259810963
+############################################
+R-squared: 0.404454058003
+mean-squared-error: 0.536249745341
+mean-absoluate-error: 0.404323590015
+############################################
+R-squared: 0.756406891227
+mean-squared-error: 0.21933948892
+mean-absoluate-error: 0.280992190922
+############################################
 ```

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" afterPath="$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="249" column="29" lean-forward="false" selection-start-line="249" selection-start-column="29" selection-end-line="249" selection-end-column="29" />
+            <state relative-caret-position="250">
+              <caret line="315" column="0" lean-forward="true" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,13 +94,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2-Boston-LinearRegressorLogistic&amp;SGD.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2-Boston-LinearRegressorLogistic&amp;SGD.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="16" />
+            <state relative-caret-position="346">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2-Boston-LinearRegressorSVM.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,16 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="7182">
               <caret line="277" column="25" lean-forward="false" selection-start-line="276" selection-start-column="8" selection-end-line="277" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frame.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python/Lib/site-packages/pandas/core/frame.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71766">
-              <caret line="2748" column="8" lean-forward="false" selection-start-line="2748" selection-start-column="8" selection-end-line="2748" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -149,8 +152,9 @@
         <option value="$PROJECT_DIR$/2-Titanic-Tree.py" />
         <option value="$PROJECT_DIR$/2-Titanic-Forest.py" />
         <option value="$PROJECT_DIR$/2-Boston-LinearLogistic&amp;SGD.py" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py" />
         <option value="$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -204,24 +208,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2-Boston-LinearLogistic&amp;SGD">
-    <configuration default="false" name="2-News-Bayes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MachineLearningStudy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2-News-Bayes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.2-Boston-LinearRegressorLogistic&amp;SGD">
     <configuration default="false" name="2-Iris-KNeighbors" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,6 +273,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MachineLearningStudy" />
       <option name="SCRIPT_NAME" value="D:\python_code\MachineLearningStudy\2-Boston-LinearRegressorLogistic&amp;SGD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="2-Boston-LinearRegressorLogistic&amp;SGD" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MachineLearningStudy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -425,24 +429,27 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.2-News-Bayes" />
-      <item index="1" class="java.lang.String" itemvalue="Python.2-Iris-KNeighbors" />
-      <item index="2" class="java.lang.String" itemvalue="Python.2-Titanic-Tree" />
-      <item index="3" class="java.lang.String" itemvalue="Python.2-Titanic-Forest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.2-Boston-LinearLogistic&amp;SGD" />
+      <item index="0" class="java.lang.String" itemvalue="Python.2-Iris-KNeighbors" />
+      <item index="1" class="java.lang.String" itemvalue="Python.2-Titanic-Tree" />
+      <item index="2" class="java.lang.String" itemvalue="Python.2-Titanic-Forest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.2-Boston-LinearLogistic&amp;SGD" />
+      <item index="4" class="java.lang.String" itemvalue="Python.2-Boston-LinearRegressorLogistic&amp;SGD" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.2-Boston-LinearLogistic&amp;SGD" />
-        <item index="1" class="java.lang.String" itemvalue="Python.2-Titanic-Forest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.2-Titanic-Tree" />
-        <item index="3" class="java.lang.String" itemvalue="Python.2-Iris-KNeighbors" />
-        <item index="4" class="java.lang.String" itemvalue="Python.2-News-Bayes" />
+        <item index="0" class="java.lang.String" itemvalue="Python.2-Boston-LinearRegressorLogistic&amp;SGD" />
+        <item index="1" class="java.lang.String" itemvalue="Python.2-Boston-LinearLogistic&amp;SGD" />
+        <item index="2" class="java.lang.String" itemvalue="Python.2-Titanic-Forest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.2-Titanic-Tree" />
+        <item index="4" class="java.lang.String" itemvalue="Python.2-Iris-KNeighbors" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -667,6 +674,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82728">
           <caret line="3083" column="0" lean-forward="false" selection-start-line="3083" selection-start-column="0" selection-end-line="3083" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -735,6 +743,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82728">
           <caret line="3083" column="0" lean-forward="false" selection-start-line="3083" selection-start-column="0" selection-end-line="3083" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -756,6 +765,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82728">
           <caret line="3083" column="0" lean-forward="false" selection-start-line="3083" selection-start-column="0" selection-end-line="3083" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -864,21 +874,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="249" column="29" lean-forward="false" selection-start-line="249" selection-start-column="29" selection-end-line="249" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="427">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="16" />
+        <state relative-caret-position="346">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="315" column="0" lean-forward="true" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
