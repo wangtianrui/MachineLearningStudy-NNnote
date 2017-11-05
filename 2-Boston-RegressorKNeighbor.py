@@ -1,4 +1,3 @@
-from sklearn.neighbors import KNeighborsRegressor
 from sklearn.datasets import load_boston
 from sklearn.cross_validation import train_test_split
 import numpy as np

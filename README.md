@@ -402,3 +402,14 @@ dis_Accuracy: 0.719758997016
 the mean squared error of dis: 21.7302501609
 the mean absoluate error of dis: 2.80505687851
 ```
+
+## 2-Boston-DecisionTreeRegressor.py
+
+```txt
+the max target value is 50.0
+the min target value is 5.0
+the average target value is 22.5328063241
+uni_Accuracy: 0.551368332046
+the mean squared error of dtr: 34.787480315
+the mean absoluate error of dtr: 3.33149606299
+```
