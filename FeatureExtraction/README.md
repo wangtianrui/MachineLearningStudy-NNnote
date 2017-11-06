@@ -23,7 +23,7 @@ array = vec.fit_transform(measurements).toarray()
   (2, 3)	18.0
 ```
 
-## 文本特征提取
+## txtExtraction.py
 
 * #### CountVectorizer & TfidfVectorizer
 
@@ -146,3 +146,7 @@ CountVectorizer
  ```
 
  >从上面输出可以看出  前面是一个高维数据矩阵，后面CountVectorizer是1，TfidfVectorizer则是频率的倒数
+
+ ## FeatureFilter.py
+
+ >特征筛选，和PCA相比，它没有改变样本的属性，而是侧重于寻找那些“关键”特征
