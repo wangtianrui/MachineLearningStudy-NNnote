@@ -4,9 +4,11 @@ from sklearn.cross_validation import train_test_split
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+import tensorflow as tf
+
 
 boston = load_boston()
-print(boston.DESCR)
+print("test:",boston.DESCR)
 x = boston.data
 y = boston.target
 x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=33, test_size=0.25)
@@ -24,6 +26,8 @@ x_test = ss_x.transform(x_test)
 
 y_train = ss_y.fit_transform(y_train)
 y_test = ss_y.transform(y_test)
+
+print("------------------------------------",x_train)
 
 linear_svr = SVR(kernel='linear')
 linear_svr.fit(x_train, y_train)

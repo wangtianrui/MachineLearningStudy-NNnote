@@ -1,415 +1,113 @@
-# MachineLearningStudy
+# 两本书的学习：《kaggle实战》(book1)、《机器学习实战》(ML)
 
-## 2-BreastCancer-logistic&SGD.py
+## 一些常见库的使用:
 
->线性分类器（考虑所有样本）
+* python自带api：
 
-```txt
-(683, 11)
-2    344
-4    168
-Name: Class, dtype: int64
-2    100
-4     71
-Name: Class, dtype: int64
+  > 对矩阵进行排序，返回index 
 
+  ```python
+  import numpy as np
+  x=np.array([1,4,3,-1,6,9])
+  x.argsort()
 
-Accuracy : 0.988304093567
-             precision    recall  f1-score   support
+  #输出为y=array([3,0,2,1,4,5])。
+  #argsort()函数是将x中的元素从小到大排列，相当于是将以前矩阵中的index进行排序（按照index对应的值），然后输出到y。例如：x[3]=-1最小，所以y[0]=3,x[5]=9最大，所以y[5]=5。
+  ```
 
-     Benign       0.99      0.99      0.99       100
-  Malignant       0.99      0.99      0.99        71
+  > readlines() , readline()
 
-avg / total       0.99      0.99      0.99       171
+  ```python
+  fr = open(filename)
+  arrayOLines = fr.readlines()#返回一个列表，包括所有行
+  #readline()返回一行
+  ```
 
+  > len()
 
-Accuracy : 0.964912280702
-             precision    recall  f1-score   support
+  ```python
+  numberOfLines = len(arrayOLines) #测长度
+  ```
 
-     Benign       0.98      0.96      0.97       100
-  Malignant       0.95      0.97      0.96        71
+  ​
 
-avg / total       0.97      0.96      0.96       171
-```
->logistic是以极大似然来进行参数的优化
 
->SGD则是由求导进行梯度训练
+* operator (import operator):
 
-
-## 2-Number-SVM.py
-
->线性分类器（考虑代表性样本）
-
-```txt
-(1797, 64)
-(1347, 64) (450, 64) (1347,) (450,)
-Accuracy : 0.953333333333
-             precision    recall  f1-score   support
-
-          0       0.92      1.00      0.96        35
-          1       0.96      0.98      0.97        54
-          2       0.98      1.00      0.99        44
-          3       0.93      0.93      0.93        46
-          4       0.97      1.00      0.99        35
-          5       0.94      0.94      0.94        48
-          6       0.96      0.98      0.97        51
-          7       0.92      1.00      0.96        35
-          8       0.98      0.84      0.91        58
-          9       0.95      0.91      0.93        44
-
-avg / total       0.95      0.95      0.95       450
-```
-
->相对于logistic与SDC，SVM是通过两个样本的位子来确定分类器，向量的位置不是受所有样本影响，而是两个空间间隔最小的样本
-
-
-## 2-News-Bayes.py
-
->朴素贝叶斯分类器，单独考虑每一个维度的特征（大多用于文本分类）
-
-```txt
-18846
-From: Mamatha Devineni Ratnam <mr47+@andrew.cmu.edu>
-Subject: Pens fans reactions
-Organization: Post Office, Carnegie Mellon, Pittsburgh, PA
-Lines: 12
-NNTP-Posting-Host: po4.andrew.cmu.edu
-
-
-
-I am sure some bashers of Pens fans are pretty confused about the lack
-of any kind of posts about the recent Pens massacre of the Devils. Actually,
-I am  bit puzzled too and a bit relieved. However, I am going to put an end
-to non-PIttsburghers' relief with a bit of praise for the Pens. Man, they
-are killing those Devils worse than I thought. Jagr just showed you why
-he is much better than his regular season stats. He is also a lot
-fo fun to watch in the playoffs. Bowman should let JAgr have a lot of
-fun in the next couple of games since the Pens are going to beat the pulp out of Jersey anyway. I was very disappointed not to see the Islanders lose the final
-regular season game.          PENS RULE!!!
-
-
-Accuracy： 0.839770797963
-                          precision    recall  f1-score   support
-
-             alt.atheism       0.86      0.86      0.86       201
-           comp.graphics       0.59      0.86      0.70       250
- comp.os.ms-windows.misc       0.89      0.10      0.17       248
-comp.sys.ibm.pc.hardware       0.60      0.88      0.72       240
-   comp.sys.mac.hardware       0.93      0.78      0.85       242
-          comp.windows.x       0.82      0.84      0.83       263
-            misc.forsale       0.91      0.70      0.79       257
-               rec.autos       0.89      0.89      0.89       238
-         rec.motorcycles       0.98      0.92      0.95       276
-      rec.sport.baseball       0.98      0.91      0.95       251
-        rec.sport.hockey       0.93      0.99      0.96       233
-               sci.crypt       0.86      0.98      0.91       238
-         sci.electronics       0.85      0.88      0.86       249
-                 sci.med       0.92      0.94      0.93       245
-               sci.space       0.89      0.96      0.92       221
-  soc.religion.christian       0.78      0.96      0.86       232
-      talk.politics.guns       0.88      0.96      0.92       251
-   talk.politics.mideast       0.90      0.98      0.94       231
-      talk.politics.misc       0.79      0.89      0.84       188
-      talk.religion.misc       0.93      0.44      0.60       158
-
-             avg / total       0.86      0.84      0.82      4712
-```
-
-## 2-Iris-KNeighbors.py
-
->利用预设值K，对样本进行分类，该模型没有训练过程
-
-```txt
-(150, 4)
-Iris Plants Database
-====================
-
-Notes
------
-Data Set Characteristics:
-    :Number of Instances: 150 (50 in each of three classes)
-    :Number of Attributes: 4 numeric, predictive attributes and the class
-    :Attribute Information:
-        - sepal length in cm
-        - sepal width in cm
-        - petal length in cm
-        - petal width in cm
-        - class:
-                - Iris-Setosa
-                - Iris-Versicolour
-                - Iris-Virginica
-    :Summary Statistics:
-
-    ============== ==== ==== ======= ===== ====================
-                    Min  Max   Mean    SD   Class Correlation
-    ============== ==== ==== ======= ===== ====================
-    sepal length:   4.3  7.9   5.84   0.83    0.7826
-    sepal width:    2.0  4.4   3.05   0.43   -0.4194
-    petal length:   1.0  6.9   3.76   1.76    0.9490  (high!)
-    petal width:    0.1  2.5   1.20  0.76     0.9565  (high!)
-    ============== ==== ==== ======= ===== ====================
-
-    :Missing Attribute Values: None
-    :Class Distribution: 33.3% for each of 3 classes.
-    :Creator: R.A. Fisher
-    :Donor: Michael Marshall (MARSHALL%PLU@io.arc.nasa.gov)
-    :Date: July, 1988
-
-This is a copy of UCI ML iris datasets.
-http://archive.ics.uci.edu/ml/datasets/Iris
-
-The famous Iris database, first used by Sir R.A Fisher
-
-This is perhaps the best known database to be found in the
-pattern recognition literature.  Fisher's paper is a classic in the field and
-is referenced frequently to this day.  (See Duda & Hart, for example.)  The
-data set contains 3 classes of 50 instances each, where each class refers to a
-type of iris plant.  One class is linearly separable from the other 2; the
-latter are NOT linearly separable from each other.
-
-References
-----------
-   - Fisher,R.A. "The use of multiple measurements in taxonomic problems"
-     Annual Eugenics, 7, Part II, 179-188 (1936); also in "Contributions to
-     Mathematical Statistics" (John Wiley, NY, 1950).
-   - Duda,R.O., & Hart,P.E. (1973) Pattern Classification and Scene Analysis.
-     (Q327.D83) John Wiley & Sons.  ISBN 0-471-22361-1.  See page 218.
-   - Dasarathy, B.V. (1980) "Nosing Around the Neighborhood: A New System
-     Structure and Classification Rule for Recognition in Partially Exposed
-     Environments".  IEEE Transactions on Pattern Analysis and Machine
-     Intelligence, Vol. PAMI-2, No. 1, 67-71.
-   - Gates, G.W. (1972) "The Reduced Nearest Neighbor Rule".  IEEE Transactions
-     on Information Theory, May 1972, 431-433.
-   - See also: 1988 MLC Proceedings, 54-64.  Cheeseman et al"s AUTOCLASS II
-     conceptual clustering system finds 3 classes in the data.
-   - Many, many more ...
-
-Accuracy: 0.894736842105
-             precision    recall  f1-score   support
-
-     setosa       1.00      1.00      1.00         8
- versicolor       0.73      1.00      0.85        11
-  virginica       1.00      0.79      0.88        19
-
-avg / total       0.92      0.89      0.90        38
-
-```
-## 2-Titanic-Tree.py
-
-```txt
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 1313 entries, 0 to 1312
-Data columns (total 3 columns):
-pclass    1313 non-null object
-age       1313 non-null float64
-sex       1313 non-null object
-dtypes: float64(1), object(2)
-memory usage: 30.9+ KB
-None
-['age', 'pclass=1st', 'pclass=2nd', 'pclass=3rd', 'sex=female', 'sex=male']
-Accuracy: 0.781155015198
-             precision    recall  f1-score   support
-
-       died       0.78      0.91      0.84       202
-   survived       0.80      0.58      0.67       127
-
-avg / total       0.78      0.78      0.77       329
-
-```
-
-## 2-Titanic-Forest.py
-
-```txt
-Accuracy: 0.781155015198
-             precision    recall  f1-score   support
-
-          0       0.78      0.91      0.84       202
-          1       0.80      0.58      0.67       127
-
-avg / total       0.78      0.78      0.77       329
-
-Accuracy: 0.775075987842
-             precision    recall  f1-score   support
-
-          0       0.77      0.91      0.83       202
-          1       0.79      0.57      0.66       127
-
-avg / total       0.78      0.78      0.77       329
-
-Accuracy: 0.790273556231
-             precision    recall  f1-score   support
-
-          0       0.78      0.92      0.84       202
-          1       0.82      0.58      0.68       127
-
-avg / total       0.80      0.79      0.78       329
-
-```
->集成分类器，各个分类器之间相互作用
-
-## 2-Boston-LinearRegressorLogistic&SGD.py
-
-```txt
-Boston House Prices dataset
-===========================
-
-Notes
-------
-Data Set Characteristics:
-
-    :Number of Instances: 506
-
-    :Number of Attributes: 13 numeric/categorical predictive
-
-    :Median Value (attribute 14) is usually the target
-
-    :Attribute Information (in order):
-        - CRIM     per capita crime rate by town
-        - ZN       proportion of residential land zoned for lots over 25,000 sq.ft.
-        - INDUS    proportion of non-retail business acres per town
-        - CHAS     Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
-        - NOX      nitric oxides concentration (parts per 10 million)
-        - RM       average number of rooms per dwelling
-        - AGE      proportion of owner-occupied units built prior to 1940
-        - DIS      weighted distances to five Boston employment centres
-        - RAD      index of accessibility to radial highways
-        - TAX      full-value property-tax rate per $10,000
-        - PTRATIO  pupil-teacher ratio by town
-        - B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
-        - LSTAT    % lower status of the population
-        - MEDV     Median value of owner-occupied homes in $1000's
-
-    :Missing Attribute Values: None
-
-    :Creator: Harrison, D. and Rubinfeld, D.L.
-
-This is a copy of UCI ML housing dataset.
-http://archive.ics.uci.edu/ml/datasets/Housing
-
-
-This dataset was taken from the StatLib library which is maintained at Carnegie Mellon University.
-
-The Boston house-price data of Harrison, D. and Rubinfeld, D.L. 'Hedonic
-prices and the demand for clean air', J. Environ. Economics & Management,
-vol.5, 81-102, 1978.   Used in Belsley, Kuh & Welsch, 'Regression diagnostics
-...', Wiley, 1980.   N.B. Various transformations are used in the table on
-pages 244-261 of the latter.
-
-The Boston house-price data has been used in many machine learning papers that address regression
-problems.
-
-**References**
-
-   - Belsley, Kuh & Welsch, 'Regression diagnostics: Identifying Influential Data and Sources of Collinearity', Wiley, 1980. 244-261.
-   - Quinlan,R. (1993). Combining Instance-Based and Model-Based Learning. In Proceedings on the Tenth International Conference of Machine Learning, 236-243, University of Massachusetts, Amherst. Morgan Kaufmann.
-   - many more! (see http://archive.ics.uci.edu/ml/datasets/Housing)
-
-the max target value is 50.0
-the min target value is 5.0
-the average target value is 22.5328063241
-
-
-
-R-squared: 0.6763403831
-mean-squared-error: 0.29143408577
-mean-absoluate-error: 0.379976703913
-
-R-squared: 0.6579355574
-mean-squared-error: 0.30800641445
-mean-absoluate-error: 0.382193609163
-
-```
-
-## 2-Boston-LinearRegressorSVM.py
-
-```txt
-############################################
-R-squared: 0.65171709743
-mean-squared-error: 0.31360572651
-mean-absoluate-error: 0.369259810963
-############################################
-R-squared: 0.404454058003
-mean-squared-error: 0.536249745341
-mean-absoluate-error: 0.404323590015
-############################################
-R-squared: 0.756406891227
-mean-squared-error: 0.21933948892
-mean-absoluate-error: 0.280992190922
-############################################
-```
-
-## 2-Boston-RegressorKNeighbor.py
-
-```txt
-Data Set Characteristics:
-
-    :Number of Instances: 506
-
-    :Number of Attributes: 13 numeric/categorical predictive
-
-    :Median Value (attribute 14) is usually the target
-
-    :Attribute Information (in order):
-        - CRIM     per capita crime rate by town
-        - ZN       proportion of residential land zoned for lots over 25,000 sq.ft.
-        - INDUS    proportion of non-retail business acres per town
-        - CHAS     Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
-        - NOX      nitric oxides concentration (parts per 10 million)
-        - RM       average number of rooms per dwelling
-        - AGE      proportion of owner-occupied units built prior to 1940
-        - DIS      weighted distances to five Boston employment centres
-        - RAD      index of accessibility to radial highways
-        - TAX      full-value property-tax rate per $10,000
-        - PTRATIO  pupil-teacher ratio by town
-        - B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
-        - LSTAT    % lower status of the population
-        - MEDV     Median value of owner-occupied homes in $1000's
-
-    :Missing Attribute Values: None
-
-    :Creator: Harrison, D. and Rubinfeld, D.L.
-
-This is a copy of UCI ML housing dataset.
-http://archive.ics.uci.edu/ml/datasets/Housing
-
-
-This dataset was taken from the StatLib library which is maintained at Carnegie Mellon University.
-
-The Boston house-price data of Harrison, D. and Rubinfeld, D.L. 'Hedonic
-prices and the demand for clean air', J. Environ. Economics & Management,
-vol.5, 81-102, 1978.   Used in Belsley, Kuh & Welsch, 'Regression diagnostics
-...', Wiley, 1980.   N.B. Various transformations are used in the table on
-pages 244-261 of the latter.
-
-The Boston house-price data has been used in many machine learning papers that address regression
-problems.
-
-**References**
-
-   - Belsley, Kuh & Welsch, 'Regression diagnostics: Identifying Influential Data and Sources of Collinearity', Wiley, 1980. 244-261.
-   - Quinlan,R. (1993). Combining Instance-Based and Model-Based Learning. In Proceedings on the Tenth International Conference of Machine Learning, 236-243, University of Massachusetts, Amherst. Morgan Kaufmann.
-   - many more! (see http://archive.ics.uci.edu/ml/datasets/Housing)
-
-the max target value is 50.0
-the min target value is 5.0
-the average target value is 22.5328063241
-----------------------------------------------------------
-uni_Accuracy: 0.690345456461
-the mean squared error of uni: 24.0110141732
-the mean absoluate error of uni: 2.96803149606
-----------------------------------------------------------
-dis_Accuracy: 0.719758997016
-the mean squared error of dis: 21.7302501609
-the mean absoluate error of dis: 2.80505687851
-```
-
-## 2-Boston-DecisionTreeRegressor.py
-
-```txt
-the max target value is 50.0
-the min target value is 5.0
-the average target value is 22.5328063241
-uni_Accuracy: 0.551368332046
-the mean squared error of dtr: 34.787480315
-the mean absoluate error of dtr: 3.33149606299
-```
+  多为基本运算操作:
+
+  > 排序
+
+  ```python 
+  sorted()
+  #def sorted(*args, **kwargs): Return a new list containing all items from the iterable in ascending order.
+
+  sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
+  #第一个参数是一个迭代器（字典的）,第二个则是排序标准
+  ```
+
+  ​
+
+  https://www.cnblogs.com/nju2014/p/5568139.html
+
+* numpy (import numpy as np)
+
+  科学计算包，包含了大量的矩阵运算，所有操作都基于numpy数组
+
+  > 创建矩阵
+
+  ```python 
+   group = np.array([1.0, 1.1], [1.0, 1.0], [0, 0], [0, 0.1])
+      #def array(p_object, dtype=None, copy=True, order='K', subok=False, ndmin=0):
+  ```
+
+  > 复制矩阵进行扩充，重复A  Reps次
+
+  ```python
+  np.tile(inX, (dataSetSize, 1))   #def tile(A, reps):
+  """
+  >>> numpy.tile([0,0],5)#横向重复[0,0]5次，默认纵向1次  
+  array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])  
+  >>> numpy.tile([0,0],(1,1))#横向重复[0,0]1次，纵向1次  
+  array([[0, 0]])  
+  >>> numpy.tile([0,0],(2,1))#横向重复[0,0]1次，纵向2次  
+  array([[0, 0],  
+         [0, 0]])  
+  >>> numpy.tile([0,0],(3,1))  
+  array([[0, 0],  
+         [0, 0],  
+         [0, 0]])  
+  >>> numpy.tile([0,0],(1,3))#横向重复[0,0]3次，纵向1次  
+  array([[0, 0, 0, 0, 0, 0]])  
+  >>> numpy.tile([0,0],(2,3))#横向重复[0,0]3次，纵向2次
+  array([[0, 0, 0, 0, 0, 0],  
+         [0, 0, 0, 0, 0, 0]]) 
+  """
+  ```
+
+  > 生成0矩阵
+
+  ```python
+  def zeros(shape, dtype=None, order='C') 
+  ```
+
+  * matplotlib ：
+
+    可以用于绘图
+
+    ```python
+     fig = plt.figure() #绘图对象
+     ax = fig.add_subplot(111)  #创建一个画布，将画布分为1行1列，图像放在第1部分上
+     ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2])#将
+     plt.show()
+    """
+      def scatter(self, x, y, s=None, c=None, marker=None, cmap=None, norm=None,
+                    vmin=None, vmax=None, alpha=None, linewidths=None,
+                    verts=None, edgecolors=None,
+                    **kwargs):
+       将x , y 对应着画到画布上
+    """
+    ```
+
+    http://blog.csdn.net/anneqiqi/article/details/64125186
+
