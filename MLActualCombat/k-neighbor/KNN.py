@@ -65,7 +65,7 @@ def file2matrix(filename):
     return returnMat, classLabelVector
 
 
-def draw(datingDataMat):
+def draw(datingDataMat, datingLabels):
     """
     绘制图像
     :param datingDataMat:
@@ -87,8 +87,27 @@ def autoNorm(dataset):
     m = dataset.shape[0]
     print(m)
     normDataSet = dataset - np.tile(minVals, (m, 1))
-    normDataSet = normDataSet / np.tile(ranges, (m, 1)) #注意：操作应该要有一种“集合”整体操作的思想，而不是单体
+    normDataSet = normDataSet / np.tile(ranges, (m, 1))  # 注意：操作应该要有一种“集合”整体操作的思想，而不是单体
+    # normDataSet = np.linalg.solve(normDataSet, np.tile(ranges, (m, 1)))  # 矩阵除法
     return normDataSet, ranges, minVals
+
+
+def datingClassTest():
+    hoRatio = 0.1  # k值（0.1为百分之10）
+    filename = "E:/python_programes/MachineLearningStudy/datas/datingTestSet2.txt"
+    datingDataMat, datingLabels = file2matrix(filename)
+    normDataSet, ranges, minVals = autoNorm(datingDataMat)
+    m = datingDataMat.shape[0]
+    numTestVecs = int(m * hoRatio)
+    errorCount = 0.0
+    for i in range(numTestVecs):
+        classifierResult = classify0(datingDataMat[i, :], datingDataMat[numTestVecs:m, :],
+                                     datingLabels[numTestVecs:m], 3)
+        print("result is %d , label is %d" % (classifierResult, datingLabels[i]))
+
+        if classifierResult != datingLabels[i]:
+            errorCount += 1
+    print("errors:", errorCount)
 
 
 if __name__ == '__main__':
@@ -97,6 +116,4 @@ if __name__ == '__main__':
     result = classify0([0, 0], group, labels, 3)
     print(result)
     """
-    filename = "E:/python_programes/MachineLearningStudy/datas/datingTestSet2.txt"
-    datingDataMat, datingLabels = file2matrix(filename)
-    draw(datingDataMat)
+    datingClassTest()

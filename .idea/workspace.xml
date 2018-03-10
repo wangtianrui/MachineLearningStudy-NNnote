@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MLActualCombat/k-neighbor/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datas/datingTestSet2.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Boston-DecisionTreeRegressor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Boston-RegressorKNeighbor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-BreastCancer-logistic&amp;SGD.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Iris-KNeighbors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-News-Bayes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Number-SVM.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Titanic-Forest.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2-Titanic-Tree.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FeatureExtraction/DictVectorizer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FeatureExtraction/FeatureFilter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FeatureExtraction/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FeatureExtraction/txtExtraction.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MachineLearningStudy.iml" afterPath="$PROJECT_DIR$/.idea/MachineLearningStudy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py" afterPath="$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MLActualCombat/k-neighbor/README.md" afterPath="$PROJECT_DIR$/MLActualCombat/k-neighbor/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +31,21 @@
       <file leaf-file-name="KNN.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+            <state relative-caret-position="371">
+              <caret line="105" column="41" lean-forward="false" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linalg.py" pinned="false" current-in-tab="false">
+        <entry file="file://E:/python3.5/Lib/site-packages/numpy/linalg/linalg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,16 +115,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-274">
               <caret line="2241" column="51" lean-forward="true" selection-start-line="2241" selection-start-column="51" selection-end-line="2241" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -527,7 +509,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752994" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -551,7 +533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Lib/site-packages/sklearn/metrics/classification.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/linear_model/stochastic_gradient.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/cross_validation.py" />
     <entry file="file://D:/Python/Lib/site-packages/pandas/core/generic.py" />
@@ -794,10 +775,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/python3.5/Lib/site-packages/numpy/linalg/linalg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        <state relative-caret-position="371">
+          <caret line="105" column="41" lean-forward="false" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
