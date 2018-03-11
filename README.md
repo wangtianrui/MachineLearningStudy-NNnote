@@ -2,7 +2,7 @@
 
 ## 一些常见库的使用:
 
-* python自带api：
+* #### python自带api：
 
   > 对矩阵进行排序，返回index 
 
@@ -29,10 +29,23 @@
   numberOfLines = len(arrayOLines) #测长度
   ```
 
+  > 文字拆分
+
+  ```python
+  string(一个String对象).split('.')[0]
+  #将string按.进行拆分，取第一部分
+  ```
+
+  > 矩阵选取
+
+  ```python
+  trainMat[i,:]   #选取第一行
+  ```
+
   ​
 
 
-* operator (import operator):
+* #### operator (import operator):
 
   多为基本运算操作:
 
@@ -50,7 +63,7 @@
 
   https://www.cnblogs.com/nju2014/p/5568139.html
 
-* numpy (import numpy as np)
+* ##### numpy (import numpy as np)
 
   科学计算包，包含了大量的矩阵运算，所有操作都基于numpy数组
 
@@ -91,7 +104,18 @@
   def zeros(shape, dtype=None, order='C') 
   ```
 
-  * matplotlib ：
+  > 矩阵除法
+
+  ```python
+   np.linalg.solve(a,b)
+  """
+  solve函数有两个参数a和b。a是一个N*N的二维数组，而b是一个长度为N的一维数组，solve函数找到一个长度为N的一维数组x，使得a和x的矩阵乘积正好等于b，数组x就是多元一次方程组的解
+  """
+  ```
+
+  ​
+
+  * #### matplotlib ：
 
     可以用于绘图
 
@@ -110,4 +134,30 @@
     ```
 
     http://blog.csdn.net/anneqiqi/article/details/64125186
+
+  * #### 文件操作封装类 : os
+
+    > 路径拼接
+
+    ```python 
+    os.path.join
+    """
+    函数功能：连接两个或更多的路径名组件
+
+    如果各组件名首字母不包含'/'，则函数会自动加上
+
+    如果有一个组件是一个绝对路径，则在它之前的所有组件均会被舍弃
+
+    如果最后一个组件为空，则生成的路径以一个'/'分隔符结尾
+    """
+    ```
+
+    > 获取目录内容
+
+    ```python
+    os.listdir(filename)#获得子文件名
+    #Return a list containing the names of the files in the directory.
+    ```
+
+    ​
 

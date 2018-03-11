@@ -2,6 +2,9 @@ import numpy as np
 import operator
 import matplotlib
 import matplotlib.pyplot as plt
+import os
+
+DATA_HOME = "E:/python_programes/MachineLearningStudy/datas/knn/"
 
 
 def createDataset():
@@ -94,7 +97,8 @@ def autoNorm(dataset):
 
 def datingClassTest():
     hoRatio = 0.1  # k值（0.1为百分之10）
-    filename = "E:/python_programes/MachineLearningStudy/datas/datingTestSet2.txt"
+    # filename = "E:/python_programes/MachineLearningStudy/datas/knn/datingTestSet2.txt"
+    filename = os.path.join(DATA_HOME, "datingTestSet2.txt")
     datingDataMat, datingLabels = file2matrix(filename)
     normDataSet, ranges, minVals = autoNorm(datingDataMat)
     m = datingDataMat.shape[0]
@@ -110,10 +114,57 @@ def datingClassTest():
     print("errors:", errorCount)
 
 
+def img2vector(filename):
+    """
+    将32x32的“图”转换成(1,1024)矩阵
+    :param filename:
+    :return:
+    """
+    filename = os.path.join(DATA_HOME, filename)
+    returnVector = np.zeros(shape=(1, 1024))
+    fr = open(filename)
+    for i in range(32):
+        lineStr = fr.readline()
+        for j in range(32):
+            returnVector[0, 32 * i + j] = int(lineStr[j])
+    return returnVector
+
+
+def handwritingClassTest():
+    """
+    手写数字训练测试
+    :return:
+    """
+    hwLabels = []
+    trainFileList = os.listdir(os.path.join(DATA_HOME, "trainingDigits"))
+    print(trainFileList[1])
+    m = len(trainFileList)
+    trainMat = np.zeros(shape=(m, 1024))
+    for i in range(m):
+        fileNameStr = trainFileList[i]
+        fileStr = fileNameStr.split('.')[0]
+        classNumStr = int(fileStr.split('_')[0])
+        hwLabels.append(classNumStr)
+        trainMat[i, :] = img2vector(os.path.join(DATA_HOME, "trainingDigits", fileNameStr))
+    testFileList = os.listdir(os.path.join(DATA_HOME, "testDigits"))
+    errorCount = 0.0
+    mTest = len(testFileList)
+    for i in range(mTest):
+        fileNameStr = testFileList[i]
+        fileStr = fileNameStr.split(".")[0]
+        classNumStr = int(fileStr.split("_")[0])
+        vectorUnderTest = img2vector(os.path.join(DATA_HOME, "testDigits", fileNameStr))
+        classifierResult = classify0(vectorUnderTest, trainMat, hwLabels, 3)
+        print("result:", classifierResult, "label:", classNumStr)
+        print("error:", errorCount)
+
+
 if __name__ == '__main__':
     """
     group, labels = createDataset()
     result = classify0([0, 0], group, labels, 3)
     print(result)
-    """
+    
     datingClassTest()
+    """
+    handwritingClassTest()

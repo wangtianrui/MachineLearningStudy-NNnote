@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datas/datingTestSet2.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py" afterPath="$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MLActualCombat/k-neighbor/README.md" afterPath="$PROJECT_DIR$/MLActualCombat/k-neighbor/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +32,8 @@
       <file leaf-file-name="KNN.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="105" column="41" lean-forward="false" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+            <state relative-caret-position="366">
+              <caret line="147" column="21" lean-forward="true" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -40,10 +41,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="nt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1479515381/nt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="277" column="69" lean-forward="true" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="linalg.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/python3.5/Lib/site-packages/numpy/linalg/linalg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="4642">
               <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
               <folding />
             </state>
@@ -53,7 +64,7 @@
       <file leaf-file-name="_axes.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/python3.5/Lib/site-packages/matplotlib/axes/_axes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
+            <state relative-caret-position="84018">
               <caret line="3862" column="8" lean-forward="false" selection-start-line="3862" selection-start-column="8" selection-end-line="3862" selection-end-column="8" />
               <folding />
             </state>
@@ -63,7 +74,7 @@
       <file leaf-file-name="figure.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/python3.5/Lib/site-packages/matplotlib/figure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="20724">
               <caret line="977" column="8" lean-forward="false" selection-start-line="977" selection-start-column="8" selection-end-line="977" selection-end-column="8" />
               <folding />
             </state>
@@ -73,18 +84,8 @@
       <file leaf-file-name="io.py" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/io.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="11858">
               <caret line="541" column="8" lean-forward="false" selection-start-line="541" selection-start-column="8" selection-end-line="541" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datingTestSet2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datas/datingTestSet2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -93,7 +94,7 @@
       <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1479515381/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="61512">
               <caret line="2796" column="66" lean-forward="false" selection-start-line="2796" selection-start-column="66" selection-end-line="2796" selection-end-column="66" />
               <folding />
             </state>
@@ -103,7 +104,7 @@
       <file leaf-file-name="shape_base.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/python3.5/Lib/site-packages/numpy/lib/shape_base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="17886">
               <caret line="825" column="0" lean-forward="false" selection-start-line="825" selection-start-column="0" selection-end-line="825" selection-end-column="18" />
               <folding />
             </state>
@@ -113,8 +114,8 @@
       <file leaf-file-name="multiarray.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1479515381/numpy/core/multiarray.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-274">
-              <caret line="2241" column="51" lean-forward="true" selection-start-line="2241" selection-start-column="51" selection-end-line="2241" selection-end-column="51" />
+            <state relative-caret-position="49302">
+              <caret line="2241" column="51" lean-forward="false" selection-start-line="2241" selection-start-column="51" selection-end-line="2241" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -185,8 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,6 +213,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,16 +503,16 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2600653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2600653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32752994" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -533,18 +534,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Lib/site-packages/sklearn/linear_model/stochastic_gradient.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/cross_validation.py" />
     <entry file="file://D:/Python/Lib/site-packages/pandas/core/generic.py" />
     <entry file="file://D:/Python/Lib/site-packages/numpy/core/numeric.py" />
     <entry file="file://D:/Python/Lib/site-packages/pandas/io/parsers.py" />
-    <entry file="file://$PROJECT_DIR$/2-BreastCancer-logistic&amp;SGD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="50" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2-BreastCancer-logistic&amp;SGD.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
@@ -552,13 +546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2-Number-SVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2-Number-SVM.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/metrics/classification.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/linear_model/stochastic_gradient.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/cross_validation.py" />
@@ -572,105 +560,21 @@
     <entry file="file://D:/Python/Lib/site-packages/sklearn/cross_validation.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/tree/tree.py" />
     <entry file="file://D:/Python/Lib/site-packages/pandas/core/frame.py" />
-    <entry file="file://$PROJECT_DIR$/2-Number-SVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-BreastCancer-logistic&amp;SGD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-Boston-RegressorKNeighbor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-Boston-DecisionTreeRegressor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureExtraction/DictVectorizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-News-Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-Iris-KNeighbors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-Titanic-Tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-Titanic-Forest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2-Number-SVM.py" />
+    <entry file="file://$PROJECT_DIR$/2-BreastCancer-logistic&amp;SGD.py" />
+    <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" />
+    <entry file="file://$PROJECT_DIR$/2-Boston-RegressorKNeighbor.py" />
+    <entry file="file://$PROJECT_DIR$/2-Boston-DecisionTreeRegressor.py" />
+    <entry file="file://$PROJECT_DIR$/FeatureExtraction/DictVectorizer.py" />
+    <entry file="file://$PROJECT_DIR$/2-News-Bayes.py" />
+    <entry file="file://$PROJECT_DIR$/2-Iris-KNeighbors.py" />
+    <entry file="file://$PROJECT_DIR$/2-Titanic-Tree.py" />
+    <entry file="file://$PROJECT_DIR$/2-Titanic-Forest.py" />
     <entry file="file://D:/Python/Lib/site-packages/pandas/core/generic.py" />
     <entry file="file://D:/Python/Lib/site-packages/sklearn/feature_extraction/dict_vectorizer.py" />
-    <entry file="file://$PROJECT_DIR$/FeatureExtraction/txtExtraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureExtraction/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3344">
-          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureExtraction/FeatureFilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureExtraction/txtExtraction.py" />
+    <entry file="file://$PROJECT_DIR$/FeatureExtraction/README.md" />
+    <entry file="file://$PROJECT_DIR$/FeatureExtraction/FeatureFilter.py" />
     <entry file="file://E:/python3.5/Lib/site-packages/tensorflow/python/ops/array_ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33220">
@@ -683,23 +587,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16082">
           <caret line="740" column="6" lean-forward="false" selection-start-line="740" selection-start-column="6" selection-end-line="740" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py" />
     <entry file="file://E:/python3.5/Lib/site-packages/sklearn/svm/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="186" column="25" lean-forward="false" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +615,7 @@
     </entry>
     <entry file="file://E:/python3.5/Lib/site-packages/numpy/lib/shape_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="17886">
           <caret line="825" column="0" lean-forward="false" selection-start-line="825" selection-start-column="0" selection-end-line="825" selection-end-column="18" />
           <folding />
         </state>
@@ -729,7 +623,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1479515381/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="61512">
           <caret line="2796" column="66" lean-forward="false" selection-start-line="2796" selection-start-column="66" selection-end-line="2796" selection-end-column="66" />
           <folding />
         </state>
@@ -737,7 +631,7 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/io.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="11858">
           <caret line="541" column="8" lean-forward="false" selection-start-line="541" selection-start-column="8" selection-end-line="541" selection-end-column="8" />
           <folding />
         </state>
@@ -745,15 +639,15 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1479515381/numpy/core/multiarray.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-274">
-          <caret line="2241" column="51" lean-forward="true" selection-start-line="2241" selection-start-column="51" selection-end-line="2241" selection-end-column="51" />
+        <state relative-caret-position="49302">
+          <caret line="2241" column="51" lean-forward="false" selection-start-line="2241" selection-start-column="51" selection-end-line="2241" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://E:/python3.5/Lib/site-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="20724">
           <caret line="977" column="8" lean-forward="false" selection-start-line="977" selection-start-column="8" selection-end-line="977" selection-end-column="8" />
           <folding />
         </state>
@@ -769,7 +663,7 @@
     </entry>
     <entry file="file://E:/python3.5/Lib/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
+        <state relative-caret-position="84018">
           <caret line="3862" column="8" lean-forward="false" selection-start-line="3862" selection-start-column="8" selection-end-line="3862" selection-end-column="8" />
           <folding />
         </state>
@@ -777,16 +671,24 @@
     </entry>
     <entry file="file://E:/python3.5/Lib/site-packages/numpy/linalg/linalg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="4642">
           <caret line="211" column="0" lean-forward="false" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1479515381/nt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="277" column="69" lean-forward="true" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/k-neighbor/KNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="105" column="41" lean-forward="false" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+        <state relative-caret-position="366">
+          <caret line="147" column="21" lean-forward="true" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="21" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
