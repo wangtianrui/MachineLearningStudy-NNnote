@@ -42,6 +42,52 @@
   trainMat[i,:]   #选取第一行
   ```
 
+  > 排序(sort)
+
+  ```python
+   sorted(iterable, cmp=None, key=None, reverse=False) 
+      """
+      iterable：是可迭代类型;
+  	cmp：用于比较的函数，比较什么由key决定;
+  	key：用列表元素的某个属性或函数进行作为关键字，有默认值，迭代集合中的一项;
+  	reverse：排序规则. reverse = True  降序 或者 reverse = False 升序，有默认值。
+  	返回值：是一个经过排序的可迭代类型，与iterable一样。
+      """
+  ```
+
+  > 遍历获得List(List操作)
+
+  ```python
+  classList = [example[-1] for example in dataSet]  
+  #用example遍历dataSet，然后取出每个example的最后一个数据放入classList
+  ```
+
+  > 字典内部包含字典(可以用于创建树)
+
+  ```py
+   myTree = {bestFeatLabel: {}}  # 创建一个包含字典的字典
+  ```
+
+  > 删除变量(del )
+
+  ```python
+      a=1       # 对象 1 被 变量a引用，对象1的引用计数器为1  
+      b=a       # 对象1 被变量b引用，对象1的引用计数器加1  
+      c=a       #1对象1 被变量c引用，对象1的引用计数器加1  
+      del a     #删除变量a，解除a对1的引用  
+      del b     #删除变量b，解除b对1的引用  
+      print(c)  #最终变量c仍然引用1  
+      
+      """
+      a=1       # 对象 1 被 变量a引用，对象1的引用计数器为1  
+      b=a       # 对象1 被变量b引用，对象1的引用计数器加1  
+      c=a       #1对象1 被变量c引用，对象1的引用计数器加1  
+      del a     #删除变量a，解除a对1的引用  
+      del b     #删除变量b，解除b对1的引用  
+      print(c)  #最终变量c仍然引用1  
+      """
+  ```
+
   ​
 
 
@@ -62,6 +108,23 @@
   ​
 
   https://www.cnblogs.com/nju2014/p/5568139.html
+
+
+> 获取对象单维数据(itemgetter)
+
+```python
+a = [1,2,3] 
+b=operator.itemgetter(1)      //定义函数b，获取对象的第1个域的值
+#2
+
+b=operator.itemgetter(1,0)  //定义函数b，获取对象的第1个域和第0个的值
+b(a) 
+#(2, 1)
+
+要注意，op
+```
+
+
 
 * ##### numpy (import numpy as np)
 
