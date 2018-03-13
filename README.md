@@ -88,7 +88,17 @@
       """
   ```
 
+  >对象的类型
+
+  ```python
+  if type(secondDict[key]).name=='dict'  #测试该对象是不是字典
+  ```
+
   ​
+
+  ​
+
+  ​					
 
 
 * #### operator (import operator):
@@ -197,6 +207,8 @@ b(a)
     ```
 
     http://blog.csdn.net/anneqiqi/article/details/64125186
+
+  * annotations
 
   * #### 文件操作封装类 : os
 

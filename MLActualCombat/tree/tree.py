@@ -194,6 +194,11 @@ def getTreeDepth(myTree):
 
 
 def retrieveTree(i):
+    """
+    创建用于测试的“树”
+    :param i:
+    :return:
+    """
     listOfTrees = [
         {
             'no surfacing':
@@ -233,20 +238,76 @@ def retrieveTree(i):
 
 
 def plotMidText(cntrPt, parentPt, txtString):
+    """
+    在叶与叶之间的连接线上写上对应的数字
+    :param cntrPt: 子结点位子
+    :param parentPt:父节点的位子
+    :param txtString:
+    :return:
+    """
     xMid = (parentPt[0] - cntrPt[0]) / 2.0 + cntrPt[0]
     yMid = (parentPt[1] - cntrPt[1]) / 2.0 + cntrPt[1]
-    createPlot().ax1.text(xMid, yMid, txtString)
+    createPlot.ax1.text(xMid, yMid, txtString)
 
 
 def plotTree(myTree, parentPt, nodeTxt):
+    """
+    画树
+    :param myTree:
+    :param parentPt:
+    :param nodeTxt:
+    :return:
+    """
     numLeafs = getNumLeafs(myTree)
     depth = getTreeDepth(myTree)
-    firstStr = myTree.keys()[0]
-    cntrPt = (plotTree.x0ff + (1.0 + float(numLeafs)) / 2.0 / plotTree.totalW, plotTree.y0ff)
+    firstStr = list(myTree.keys())[0]
+    cntrPt = (plotTree.x0ff + (1.0 + float(numLeafs)) / 2.0 / plotTree.totalW,
+              plotTree.y0ff)  # plotTree.x0ff可以追踪到当前绘制到的点的x轴位置，因为绘制的图的x轴有效范围是0~1，所以要进行处理
     plotMidText(cntrPt, parentPt, nodeTxt)
     decisionNode = dict(boxstyle="sawtooth", fc="0.8")  # boxstyle = "swatooth"意思是注解框的边缘是波浪线型的，fc控制的注解框内的颜色深度
     leafNode = dict(boxstyle="round4", fc="0.8")  # 平滑的线
     plotNode(firstStr, cntrPt, parentPt, decisionNode)
+    secondDict = myTree[firstStr]
+    plotTree.y0ff = plotTree.y0ff - 1.0 / plotTree.totalD
+    for key in secondDict.keys():
+        if type(secondDict[key]).__name__ == 'dict':
+            plotTree(secondDict[key], cntrPt, str(key))
+        else:
+            plotTree.x0ff = plotTree.x0ff + 1.0 / plotTree.totalW
+            plotNode(secondDict[key], (plotTree.x0ff, plotTree.y0ff), cntrPt, leafNode)
+            plotMidText((plotTree.x0ff, plotTree.y0ff), cntrPt, str(key))
+    plotTree.y0ff = plotTree.y0ff + 1.0 / plotTree.totalD
+
+
+def createPlot(inTree):
+    """
+    创建画板
+    :param inTree:
+    :return:
+    """
+    fig = plt.figure(1, facecolor='white')
+    fig.clf()
+    axprops = dict(xticks=[], yticks=[])
+    createPlot.ax1 = plt.subplot(111, frameon=False, **axprops)
+    plotTree.totalW = float(getNumLeafs(inTree))
+    plotTree.totalD = float(getTreeDepth(inTree))
+    plotTree.x0ff = -0.5 / plotTree.totalW
+    plotTree.y0ff = 1.0
+    plotTree(inTree, (0.5, 1.0), '')
+    plt.show()
+
+
+def classify(inputTree, featLabels, testVec):
+    firstStr = list(inputTree.keys())[0]
+    secondDict = inputTree[firstStr]
+    featIndex = featLabels.index(firstStr)
+    for key in secondDict.keys():
+        if testVec[featIndex] == key:
+            if type(secondDict[key]).__name__ == 'dict':
+                classLabel = classify(secondDict[key], featLabels, testVec)
+            else:
+                classLabel = secondDict[key]
+    return classLabel
 
 
 if __name__ == "__main__":
@@ -254,7 +315,9 @@ if __name__ == "__main__":
     # print(calcShannonEnt(testMat))  # 0.9709505944546686
     # print(chooseBestFeatureToSplit(testMat))
     # createPlot()
-    listOfTree = retrieveTree(1)
-    numLeaf = getNumLeafs(listOfTree)
-    depth = getTreeDepth(listOfTree)
-    print(listOfTree, numLeaf, depth)
+    """
+    listOfTree = retrieveTree(0)
+    listOfTree['no surfacing'][3] = 'maybe'
+    print(listOfTree)
+    createPlot(listOfTree)
+    """
