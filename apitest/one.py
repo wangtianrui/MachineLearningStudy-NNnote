@@ -82,7 +82,6 @@ def testLRN():
         [[17, 18, 19, 20, 21, 22, 23, 24],
          [27, 28, 29, 30, 31, 32, 33, 34]]], dtype="float32")
 
-
     array = tf.reshape(array, shape=[1, 2, 8, 2])
     lrn_result = tf.nn.lrn(array, depth_radius=4, beta=0.5, bias=0, alpha=1)
     lrn_result1 = tf.nn.lrn(array, depth_radius=4, beta=1, bias=0, alpha=1)
@@ -101,8 +100,53 @@ def testLRN():
         print("------------------------------good parameter------------------------------")
         print(sess.run(lrn_good))
 
+
+def testDropOut():
+    """
+    dropout解释：输入参数中保留keep_pro参数，未保留参数致0，保留参数 输出为 input/keep_pro
+    :return:
+    """
+    array = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "float32")
+    dropout = tf.nn.dropout(array, keep_prob=0.7)
+    with tf.Session() as sess:
+        print("--------------------------------------------------------")
+        print(sess.run(dropout))
+
+
+def testBN():
+    """
+    BN是用来解决因为层数太多出现梯度弥散的问题，因为调整了每层数据的取值，从而使大的不那么大，让所有的数据都能被激活函数给进行
+    划分（参考：轻轻碰和重重碰），有效地让每个值都参与了训练
+
+    tensorflow.layers.batch_normalization是集成了之前 tf.nn.moments 和tf.nn.batch_normalization两个方法
+    tf.nn.moments ： 求平均值函数 ，注意该方法只接受tf.float32数据类型
+    tf.nn.batch_normalization :  BN操作
+    :return:
+    """
+    array = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                      [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]], dtype="float32")  #
+    # array = tf.reshape(array, shape=[1, 1, 10, 1])
+    # bn = tf.nn.batch_normalization(array)
+    # bn = tf.layers.batch_normalization(array)
+    array = tf.cast(array, dtype=tf.float32)
+    mean, variance = tf.nn.moments(array, axes=[0])  # 按维度0求均值和方差
+    # mean, variance = tf.nn.moments(array, axes=[0,1])  # 按所有数据求均值和方差
+    #bn_divide = tf.nn.batch_normalization(array,mean=mean,variance=variance,)
+    bn = tf.layers.batch_normalization(array) #因为涉及到参数的初始化（偏移量和微小正数），所以需要有一个init的步骤
+
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
+        print("------------------mean---------------------")
+        print(sess.run(mean))
+        print("------------------variance-----------------")
+        print(sess.run(variance))
+        print("------------------bn（分开操作）-------------")
+        print(sess.run(bn))
+
+
 if __name__ == "__main__":
     # testMatmul()
     # testSoftMaxAndCross_entropy()
     # testLogSotfMax()
-    testLRN()
+    # testLRN()
+    testBN()
