@@ -90,3 +90,7 @@ def testSoftMaxAndCross_entropy():
 
 
 ```
+
+### tf.nn.lrn
+
+>    
