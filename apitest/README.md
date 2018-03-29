@@ -264,10 +264,10 @@ def testDropOut():
 ```python
 def testBN():
     """
-    BN是用来解决因为层数太多出现梯度弥散的问题，因为调整了每层数据的取值，从而使大的不那么大，让所有的数据都	 能被激活函数给进行
+    BN是用来解决因为层数太多出现梯度弥散的问题，因为调整了每层数据的取值，从而使大的不那么大，让所有的数据都能被激活函数给进行
     
     划分（参考：轻轻碰和重重碰），有效地让每个值都参与了训练
-    tensorflow.layers.batch_normalization是集成了之前 tf.nn.moments 和tf.nn.batch_normalization两个	  方法
+    tensorflow.layers.batch_normalization是集成了之前 tf.nn.moments 和tf.nn.batch_normalization两个方法
     tf.nn.moments ： 求平均值函数 ，注意该方法只接受tf.float32数据类型
     tf.nn.batch_normalization :  BN操作
     :return:
