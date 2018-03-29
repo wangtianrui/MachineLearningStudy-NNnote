@@ -115,6 +115,14 @@ def testDropOut():
 
 def testBN():
     """
+    tf.nn.batch_normalization is a low-level op. The caller is responsible to handle mean and variance tensors themselves.
+    tf.nn.fused_batch_norm is another low-level op, similar to the previous one. The difference is that it's optimized for 4D input tensors, which is the usual case in convolutional neural networks.  tf.nn.batch_normalization accepts tensors of any rank greater than 1.
+    tf.layers.batch_normalization is a high-level wrapper over the previous ops. The biggest difference is that it takes care of creating and managing the running mean and variance tensors, and calls a fast fused op when possible. Usually, this should be the default choice for you.
+    tf.contrib.layers.batch_norm is the early implementation of batch norm, before it's graduated to the core API (i.e., tf.layers). The use of it is not recommended because it may be dropped in the future releases.
+    tf.nn.batch_norm_with_global_normalization is another deprecated op. Currently, delegates the call to tf.nn.batch_normalization, but likely to be dropped in the future.
+    Finally, there's also Keras layer keras.layers.BatchNormalization, which in case of tensorflow backend invokes tf.nn.batch_normalization.
+
+
     BN是用来解决因为层数太多出现梯度弥散的问题，因为调整了每层数据的取值，从而使大的不那么大，让所有的数据都能被激活函数给进行
     划分（参考：轻轻碰和重重碰），有效地让每个值都参与了训练
 
@@ -125,14 +133,20 @@ def testBN():
     """
     array = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
                       [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]], dtype="float32")  #
+
+    biass = tf.ones(shape=[2, 10])  # biass加上是有效的
+    # array = array + bias
     # array = tf.reshape(array, shape=[1, 1, 10, 1])
     # bn = tf.nn.batch_normalization(array)
     # bn = tf.layers.batch_normalization(array)
     array = tf.cast(array, dtype=tf.float32)
-    mean, variance = tf.nn.moments(array, axes=[0])  # 按维度0求均值和方差
-    # mean, variance = tf.nn.moments(array, axes=[0,1])  # 按所有数据求均值和方差
-    #bn_divide = tf.nn.batch_normalization(array,mean=mean,variance=variance,)
-    bn = tf.layers.batch_normalization(array) #因为涉及到参数的初始化（偏移量和微小正数），所以需要有一个init的步骤
+    # mean, variance = tf.nn.moments(array, axes=[0])  # 按维度0求均值和方差
+    mean, variance = tf.nn.moments(array, axes=[0, 1])  # 按所有数据求均值和方差  ， 注意原公式是对所有元素求均值和标准差
+    scale = tf.Variable(tf.ones([10]))
+    shift = tf.Variable(tf.ones([10]))
+    epsilon = 0.001
+    bn_divide = tf.nn.batch_normalization(array, mean, variance, shift, scale, epsilon)
+    bn = tf.layers.batch_normalization(array)  # 因为涉及到参数的初始化（偏移量和微小正数），所以需要有一个init的步骤
 
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
@@ -141,6 +155,8 @@ def testBN():
         print("------------------variance-----------------")
         print(sess.run(variance))
         print("------------------bn（分开操作）-------------")
+        print(sess.run(bn_divide))
+        print("------------------bn（api）-------------")
         print(sess.run(bn))
 
 
