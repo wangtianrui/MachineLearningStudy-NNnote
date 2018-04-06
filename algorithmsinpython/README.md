@@ -1,4 +1,4 @@
-Algorithms In Python
+# Algorithms In Python
 
 ## chapter2----python的类
 
@@ -186,4 +186,16 @@ try:
 except TypeError:
     print("error")
 ```
+
+## chapter 3
+
+### list
+
+* 用法和数组类似
+
+  注意：sort函数只有当内部元素类型相同时才能使用
+
+### 链表
+
+
 
