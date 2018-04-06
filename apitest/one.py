@@ -107,7 +107,7 @@ def testDropOut():
     :return:
     """
     array = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "float32")
-    dropout = tf.nn.dropout(array, keep_prob=0.7)
+    dropout = tf.nn.dropout(array, keep_prob=0.8)
     with tf.Session() as sess:
         print("--------------------------------------------------------")
         print(sess.run(dropout))
@@ -165,4 +165,5 @@ if __name__ == "__main__":
     # testSoftMaxAndCross_entropy()
     # testLogSotfMax()
     # testLRN()
-    testBN()
+    #testBN()
+    testDropOut()
