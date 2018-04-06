@@ -109,43 +109,45 @@ class MyList:
             prev = temp
         self._head = prev
 
-   """
-    def sort1(self):
-        if self._head is None:
-            return
-        now = self._head.getNext()
-        while now is not None:
-            x = now.getElem()
-            prev = self._head
-            while prev is not now and prev.getElem() <= x:
-                prev = prev.getNext()
-            while prev is not now:
-                temp = prev.getElem()
-                x = temp
-                prev = prev.getNext()
-            now._elem = x
-            now = now.getNext()
-   """
 
-    def sort(self):
+"""
+ def sort1(self):
+     if self._head is None:
+         return
+     now = self._head.getNext()
+     while now is not None:
+         x = now.getElem()
+         prev = self._head
+         while prev is not now and prev.getElem() <= x:
+             prev = prev.getNext()
+         while prev is not now:
+             temp = prev.getElem()
+             x = temp
+             prev = prev.getNext()
+         now._elem = x
+         now = now.getNext()
+"""
+
+
+def sort(self):
+    prev = self._head
+    if prev is None or prev.getNext() is None:
+        return
+    rem = prev.getNext()
+    prev._next = None
+    while rem is not None:
         prev = self._head
-        if prev is None or prev.getNext() is None:
-            return
-        rem = prev.getNext()
-        prev._next = None
-        while rem is not None:
-            prev = self._head
-            q = None
-            while prev is not None and prev.getElem() <= rem.getElem():
-                q = prev
-                prev = prev.getNext()
-            if q is None:
-                self._head = rem
-            else:
-                q._next = rem
-            q = rem
-            rem = rem.getNext()
-            q._next = prev
+        q = None
+        while prev is not None and prev.getElem() <= rem.getElem():
+            q = prev
+            prev = prev.getNext()
+        if q is None:
+            self._head = rem
+        else:
+            q._next = rem
+        q = rem
+        rem = rem.getNext()
+        q._next = prev
 
 
 if __name__ == "__main__":
