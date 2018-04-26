@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apitest/cvtest/testdata/diamodtest.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apitest/cvtest/testdata/peopletest.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apitest/cvtest/one.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MLActualCombat/apitest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/apitest/README.md" afterPath="$PROJECT_DIR$/apitest/tftest/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/apitest/one.py" afterPath="$PROJECT_DIR$/apitest/tftest/one.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apitest/tftest/one.py" afterPath="$PROJECT_DIR$/apitest/tftest/one.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +22,7 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apitest/tftest/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7209">
+            <state relative-caret-position="6942">
               <caret line="267" column="19" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="267" selection-end-column="19" />
               <folding />
             </state>
@@ -34,8 +32,8 @@
       <file leaf-file-name="one.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apitest/tftest/one.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="3770">
+              <caret line="146" column="19" lean-forward="false" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -43,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="apitest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="one.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apitest/cvtest/one.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="390">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -55,41 +63,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Person.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter2/Person.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-              <folding />
-            </state>
+      <file leaf-file-name="peopletest.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitest/cvtest/testdata/peopletest.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter3/list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2187">
-              <caret line="81" column="34" lean-forward="false" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Student.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter2/Student.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-              <folding />
-            </state>
+      <file leaf-file-name="diamodtest.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apitest/cvtest/testdata/diamodtest.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter2/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="182">
+              <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -100,7 +92,7 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithmsinpython/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="442">
               <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
             </state>
@@ -110,8 +102,8 @@
       <file leaf-file-name="RegularExpression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter4/RegularExpression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="546">
+              <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -120,7 +112,7 @@
       <file leaf-file-name="re.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/python3.5/Lib/re.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4536">
+            <state relative-caret-position="4368">
               <caret line="170" column="26" lean-forward="false" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
               <folding />
             </state>
@@ -179,12 +171,14 @@
         <option value="$PROJECT_DIR$/algorithmsinpython/chapter4/string.py" />
         <option value="$PROJECT_DIR$/algorithmsinpython/chapter4/RegularExpression.py" />
         <option value="$PROJECT_DIR$/apitest/cvtest/one.py" />
+        <option value="$PROJECT_DIR$/apitest/tftest/one.py" />
+        <option value="$PROJECT_DIR$/MLActualCombat/apitest.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2071" />
+    <option name="y" value="21" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -204,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -246,6 +239,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.one (1)">
+  <component name="RunManager" selected="Python.apitest">
     <configuration name="RegularExpression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -435,6 +429,23 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration name="apitest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MLActualCombat" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MachineLearningStudy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MLActualCombat/apitest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -469,54 +480,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="one" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="one (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest/tftest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MachineLearningStudy" />
-      <option name="SCRIPT_NAME" value="E:\python_programes\MachineLearningStudy\apitest\tftest\one.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithmsinpython/chapter2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MachineLearningStudy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithmsinpython/chapter2/run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apitest/tftest/one.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.one" />
-      <item index="1" class="java.lang.String" itemvalue="Python.run" />
-      <item index="2" class="java.lang.String" itemvalue="Python.list" />
-      <item index="3" class="java.lang.String" itemvalue="Python.RegularExpression" />
-      <item index="4" class="java.lang.String" itemvalue="Python.one (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.list" />
+      <item index="1" class="java.lang.String" itemvalue="Python.RegularExpression" />
+      <item index="2" class="java.lang.String" itemvalue="Python.one (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.one (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.apitest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.one (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.RegularExpression" />
-        <item index="2" class="java.lang.String" itemvalue="Python.list" />
-        <item index="3" class="java.lang.String" itemvalue="Python.run" />
-        <item index="4" class="java.lang.String" itemvalue="Python.one" />
+        <item index="0" class="java.lang.String" itemvalue="Python.apitest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.one (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.one (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.RegularExpression" />
+        <item index="4" class="java.lang.String" itemvalue="Python.list" />
       </list>
     </recent_temporary>
   </component>
@@ -537,13 +531,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10897436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11752137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3402626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42231947" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -571,9 +564,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Lib/site-packages/pandas/core/frame.py" />
-    <entry file="file://$PROJECT_DIR$/2-Number-SVM.py" />
-    <entry file="file://$PROJECT_DIR$/2-BreastCancer-logistic&amp;SGD.py" />
     <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorLogistic&amp;SGD.py" />
     <entry file="file://$PROJECT_DIR$/2-Boston-RegressorKNeighbor.py" />
     <entry file="file://$PROJECT_DIR$/2-Boston-DecisionTreeRegressor.py" />
@@ -734,47 +724,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20898">
           <caret line="795" column="6" lean-forward="false" selection-start-line="795" selection-start-column="6" selection-end-line="795" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/tftest/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7209">
-          <caret line="267" column="19" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="267" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithmsinpython/__init__.py" />
     <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter2/Person.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
+        <state relative-caret-position="546">
           <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter2/Student.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="104">
           <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter3/list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2187">
+        <state relative-caret-position="2106">
           <caret line="81" column="34" lean-forward="false" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter2/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="182">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
@@ -783,7 +761,7 @@
     </entry>
     <entry file="file://E:/python3.5/Lib/re.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4536">
+        <state relative-caret-position="4368">
           <caret line="170" column="26" lean-forward="false" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
           <folding />
         </state>
@@ -791,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithmsinpython/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="442">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding />
         </state>
@@ -799,29 +777,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithmsinpython/chapter4/RegularExpression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="546">
+          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/cvtest/testdata/peopletest.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/cvtest/testdata/diamodtest.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/tftest/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6942">
+          <caret line="267" column="19" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="267" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/cvtest/one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apitest/tftest/one.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="3770">
+          <caret line="146" column="19" lean-forward="false" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apitest/cvtest/one.py">
+    <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="421">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

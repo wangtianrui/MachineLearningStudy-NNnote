@@ -1,0 +1,12 @@
+member_id,loan_amnt,funded_amnt,funded_amnt_inv,term,int_rate,installment,grade,sub_grade,emp_title,emp_length,home_ownership,annual_inc,verification_status,issue_d,loan_status
+584883,4200,4200,4125, 36 months,12.53,140.56,B,B5,dominos,2 years,RENT,30000,Not Verified,9-Dec,Fully Paid
+613793,15000,15000,14976.42182, 36 months,14.96,519.7,D,D2,Abbott Laboratories,2 years,MORTGAGE,96000,Verified,10-Feb,Fully Paid
+679182,8000,8000,7848.777026, 60 months,11.12,174.42,B,B3,Allstate Insurance,10+ years,MORTGAGE,60000,Not Verified,10-Jun,Fully Paid
+710450,24000,24000,24000, 60 months,18.84,620.47,E,E2,Correctional Officer,10+ years,MORTGAGE,84996,Source Verified,15-May,Current
+930120,8000,8000,8000, 60 months,16.49,196.64,D,D3,Edwards Lifesciences,5 years,OWN,84875,Source Verified,11-Jun,Current
+1046913,7500,7500,7475, 36 months,5.99,228.14,A,A2,UFCW Local 27,10+ years,OWN,50000,Not Verified,11-Aug,Fully Paid
+1191450,28000,28000,27975, 60 months,22.35,778.92,F,F5,Apex,1 year,MORTGAGE,143000,Verified,12-Jan,Charged Off
+1509127,35000,35000,35000, 36 months,14.3,1201.33,C,C1,,4 years,RENT,150000,Verified,13-Dec,Fully Paid
+1696881,6400,6400,6400, 36 months,7.9,200.26,A,A4,715 Restaurant,2 years,RENT,24000,Not Verified,12-Oct,Fully Paid
+2558509,3500,3500,3500, 36 months,6.03,106.53,A,A1,ABHOW,< 1 year,RENT,35000,Not Verified,12-Nov,Fully Paid
+3729662,20000,20000,19950, 60 months,17.77,505.37,D,D1,graham-windham,9 years,RENT,81000,Verified,13-Jan,Fully Paid
