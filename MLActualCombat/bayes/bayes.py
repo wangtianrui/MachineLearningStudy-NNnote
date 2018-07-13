@@ -52,21 +52,23 @@ def trainNBO(trainMatrix, trainCategory):
     :param trainCategory: labels
     :return:
     """
-    numTrainDocs = len(trainMatrix)
-    numWords = len(trainMatrix[0])
-    pAbusive = sum(trainCategory) / float(numTrainDocs)
+    numTrainDocs = len(trainMatrix)  # 向量行数
+    numWords = len(trainMatrix[0])  # 向量列数
+    pAbusive = sum(trainCategory) / float(numTrainDocs)  #计算出训练集中样本比例
+    # print("abusive", pAbusive)
     p0Num = np.zeros(numWords)
     p1Num = np.zeros(numWords)
     p0Denom = 0.0
     p1Denom = 0.0
     for i in range(numTrainDocs):
         if trainCategory[i] == 1:
-            p1Num += trainMatrix[i]
+            p1Num += trainMatrix[i]  #对每个词汇在每类中出现的次数做记录
+            print(p1Num)
             p1Denom += sum(trainMatrix[i])
         else:
-            p0Num + - trainMatrix[i]
+            p0Num += trainMatrix[i]
             p0Denom += sum(trainMatrix[i])
-    p1Vect = p1Num / p1Denom  # 对每个做除法
+    p1Vect = p1Num / p1Denom  # 每个词汇占该类语句所有词汇的比例
     p0Vect = p0Num / p0Denom
     return p0Vect, p1Vect, pAbusive
 
@@ -81,6 +83,4 @@ if __name__ == "__main__":
         trainMat.append(setOfWords2Vec(myVocabList, postinDoc))
     print(trainMat)
     p0V, p1V, pAb = trainNBO(trainMat, listClasses)
-    print(p0V)
-    print(p1V)
-    print(pAb)
+

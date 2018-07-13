@@ -33,4 +33,7 @@ def testThreadingLock():
 
 
 if __name__ == "__main__":
-    testThreadingLock()
+    #testThreadingLock()
+    a = 1
+    a+-3
+    print(a)
