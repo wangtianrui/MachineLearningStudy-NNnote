@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLActualCombat/apitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLActualCombat/apitest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,7 +63,7 @@
       <file leaf-file-name="apitest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="676">
               <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -183,7 +183,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -597,15 +597,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293348" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17511013" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17511013" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.20044053" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20350109" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
@@ -881,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="676">
           <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
