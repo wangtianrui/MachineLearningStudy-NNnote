@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLActualCombat/apitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLActualCombat/apitest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MachineLearningStudy$apitest.coverage" NAME="apitest Coverage Results" MODIFIED="1532007458133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MLActualCombat" />
+    <SUITE FILE_PATH="coverage/MachineLearningStudy$apitest.coverage" NAME="apitest Coverage Results" MODIFIED="1532072388333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MLActualCombat" />
     <SUITE FILE_PATH="coverage/MachineLearningStudy$bayes.coverage" NAME="bayes Coverage Results" MODIFIED="1531473597447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MLActualCombat/bayes" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -39,11 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+            <state relative-caret-position="626">
+              <caret line="227" column="40" selection-start-line="227" selection-start-column="40" selection-end-line="227" selection-end-column="40" />
+              <folding>
+                <element signature="e#15#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apitest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="apitest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="819">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -126,6 +131,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>##</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,8 +175,8 @@
         <option value="$PROJECT_DIR$/apitest/cvtest/one.py" />
         <option value="$PROJECT_DIR$/apitest/tftest/one.py" />
         <option value="$PROJECT_DIR$/MLActualCombat/bayes/bayes.py" />
-        <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py" />
         <option value="$PROJECT_DIR$/MLActualCombat/apitest.py" />
+        <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py" />
       </list>
     </option>
   </component>
@@ -183,7 +189,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -597,7 +603,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -606,7 +613,7 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3293348" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17511013" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.20044053" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20350109" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11597374" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -857,13 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment4/homework/DSVC/features.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -871,19 +871,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="819">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="227" column="40" selection-start-line="227" selection-start-column="40" selection-end-line="227" selection-end-column="40" />
+          <folding>
+            <element signature="e#15#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
