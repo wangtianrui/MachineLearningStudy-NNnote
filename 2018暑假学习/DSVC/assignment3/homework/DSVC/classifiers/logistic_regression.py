@@ -55,7 +55,7 @@ class LogisticRegression(object):
                 else:
                     loss += -(y_batch[i] * (np.dot(self.ws[one_vs_all_index].T, X_batch[i]))) + np.log(
                         1 + np.exp(np.dot(self.ws[one_vs_all_index].T, X_batch[i])))
-        gradients = np.zeros(785)
+        gradients = np.zeros(X_batch.shape[1])
         if one_vs_all_index == -1:
             dot = np.dot(X_batch, self.w)
         else:
@@ -120,6 +120,7 @@ class LogisticRegression(object):
             # Hint: Use np.random.choice to generate indices. Sampling with         #
             # replacement is faster than sampling without replacement.              #
             #########################################################################
+
             # batch_data = np.random.choice(all_data, batch_size, False) 
             # error: ValueError: a must be 1-dimensional 
             # 查询相关api貌似该方法不能用于数组中元素为元组情况下的选取
@@ -172,12 +173,15 @@ class LogisticRegression(object):
         ###########################################################################
         # slicer = 0.7  # 设置阈值，阈值为1-sclicer,经过测试0.7效果最好，对应的阈值是0.3
         # 这里还发现一个小技巧，调整阈值可以根据loss来进行调整，如果最终loss偏大，则阈值对应调小
+        # 后面干脆循环取slicer，选取最大准确率的
         if one_vs_all == False:
             y_pred = sigmod(np.dot(X, self.w)) + slicer  # 因为astype是直接舍不会入，所以加上slicer值然后调用astype就相当于使用（1-slicer)作为阈值处理
             y_pred = y_pred.astype(int)
         else:
-            y_pred = sigmod(np.dot(X, self.ws.T)) + slicer  # 因为astype是直接舍不会入，所以加上阈值
-            y_pred = y_pred.astype(int)
+            # y_pred = sigmod(np.dot(X, self.ws.T)) + slicer  # 因为astype是直接舍不会入，所以加上阈值
+            # y_pred = y_pred.astype(int)
+            # 多分类不应该加阈值
+            y_pred = sigmod(np.dot(X, self.ws.T))
             y_pred = np.argmax(y_pred, axis=1)  # 每行取出最大值的下标
 
         ###########################################################################
@@ -225,6 +229,6 @@ class LogisticRegression(object):
                 # 这里发现 平均Loss能很快降到10以下，但是到5左右就基本是来回变了，所以8以下后降低学习率
                 # 此方法将准确率从0.814提升到了0.846
                 if loss_mean < 8:
-                    learning_rate = 1e-7
+                    learning_rate = 1e-6
                 print('iteration %d / %d ' % (i, num_iters), " loss_array_mean", loss_mean)
         return all_loss_history
