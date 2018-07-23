@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLActualCombat/apitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLActualCombat/apitest.py" afterDir="false" />
-    </list>
+    <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +39,8 @@
       <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="225" column="45" selection-start-line="225" selection-start-column="45" selection-end-line="225" selection-end-column="45" />
+            <state relative-caret-position="406">
+              <caret line="218" column="72" lean-forward="true" selection-start-line="218" selection-start-column="72" selection-end-line="218" selection-end-column="72" />
               <folding>
                 <element signature="e#15#33#0" expanded="true" />
               </folding>
@@ -68,7 +63,7 @@
       <file leaf-file-name="apitest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="756">
               <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -200,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,6 +288,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -611,8 +606,8 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293348" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3293348" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17339149" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.20044053" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10554371" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1995638" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10660981" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -879,7 +874,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
+        <state relative-caret-position="756">
           <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
@@ -889,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="225" column="45" selection-start-line="225" selection-start-column="45" selection-end-line="225" selection-end-column="45" />
+        <state relative-caret-position="406">
+          <caret line="218" column="72" lean-forward="true" selection-start-line="218" selection-start-column="72" selection-end-line="218" selection-end-column="72" />
           <folding>
             <element signature="e#15#33#0" expanded="true" />
           </folding>
