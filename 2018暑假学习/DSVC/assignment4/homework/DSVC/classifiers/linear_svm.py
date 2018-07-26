@@ -23,7 +23,6 @@ def svm_loss_naive(W, X, y, reg):
     - gradient with respect to weights W; an array of same shape as W
     """
     dW = np.zeros(W.shape)  # initialize the gradient as zero
-    # print(y)
     # compute the loss and the gradient
     num_classes = W.shape[0]
     num_train = X.shape[0]
@@ -38,9 +37,10 @@ def svm_loss_naive(W, X, y, reg):
             if margin > 0:
                 loss += margin
 
-                dW[j] += X[j]
+                dW[j] += X[i]
                 dW[y[i]] -= X[i]
 
+    dW /= num_train
     # Right now the loss is a sum over all training examples, but we want it
     # to be an average instead so we divide by num_train.
     loss /= num_train
@@ -90,13 +90,34 @@ def svm_loss_vectorized(W, X, y, reg):
     """
     loss = 0.0
     dW = np.zeros(W.shape)  # initialize the gradient as zero
+    delta_W = np.zeros(W.shape)
 
     #############################################################################
     # TODO:                                                                     #
     # Implement a vectorized version of the structured SVM loss, storing the    #
     # result in loss.                                                           #
     #############################################################################
-    pass
+    batch_size, dim = X.shape
+    y_pred = np.dot(X, W.T)  # 500 x 10
+    correct_class_scores = y_pred[range(batch_size), y.T]
+    # print(y_pred.shape)
+    correct_class_scores = np.reshape(correct_class_scores, (batch_size, 1))
+    mergin = y_pred - correct_class_scores + 1
+    mergin[range(batch_size), y.T] = 0
+    loss += np.sum(mergin) / batch_size + reg * np.sum(W * W)
+    above_zero_array = (mergin > 0).astype(int)
+    # print(above_zero_array.shape)
+    above_zero_num_array = np.sum(above_zero_array, axis=1).reshape((batch_size, 1))
+    dW += np.mean(above_zero_num_array * X, axis=0)
+    # dW += above_zero_num_array * X
+    delta_W = delta_W[y] - above_zero_num_array * X
+    # for i in range(batch_size):
+    #     dW[y[i]] += delta_W[i]
+    tile_array = np.tile(np.array(range(10)), (batch_size, 1)).T
+    tile_array = (tile_array == y).astype(int)
+    dW += np.dot(tile_array, delta_W)
+    dW /= batch_size
+    # print(correct_class_scores.shape)
     #############################################################################
     #                             END OF YOUR CODE                              #
     #############################################################################
