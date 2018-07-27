@@ -40,7 +40,9 @@ def svm_loss_naive(W, X, y, reg):
                 dW[j] += X[i]
                 dW[y[i]] -= X[i]
 
+    dW += reg * W
     dW /= num_train
+
     # Right now the loss is a sum over all training examples, but we want it
     # to be an average instead so we divide by num_train.
     loss /= num_train
@@ -97,26 +99,6 @@ def svm_loss_vectorized(W, X, y, reg):
     # Implement a vectorized version of the structured SVM loss, storing the    #
     # result in loss.                                                           #
     #############################################################################
-    batch_size, dim = X.shape
-    y_pred = np.dot(X, W.T)  # 500 x 10
-    correct_class_scores = y_pred[range(batch_size), y.T]
-    # print(y_pred.shape)
-    correct_class_scores = np.reshape(correct_class_scores, (batch_size, 1))
-    mergin = y_pred - correct_class_scores + 1
-    mergin[range(batch_size), y.T] = 0
-    loss += np.sum(mergin) / batch_size + reg * np.sum(W * W)
-    above_zero_array = (mergin > 0).astype(int)
-    # print(above_zero_array.shape)
-    above_zero_num_array = np.sum(above_zero_array, axis=1).reshape((batch_size, 1))
-    dW += np.mean(above_zero_num_array * X, axis=0)
-    # dW += above_zero_num_array * X
-    delta_W = delta_W[y] - above_zero_num_array * X
-    # for i in range(batch_size):
-    #     dW[y[i]] += delta_W[i]
-    tile_array = np.tile(np.array(range(10)), (batch_size, 1)).T
-    tile_array = (tile_array == y).astype(int)
-    dW += np.dot(tile_array, delta_W)
-    dW /= batch_size
     # print(correct_class_scores.shape)
     #############################################################################
     #                             END OF YOUR CODE                              #
@@ -131,7 +113,27 @@ def svm_loss_vectorized(W, X, y, reg):
     # to reuse some of the intermediate values that you used to compute the     #
     # loss.                                                                     #
     #############################################################################
-    pass
+    batch_size, dim = X.shape  # 500x3073
+    y_pred = np.dot(X, W.T)  # 500 x 10
+    correct_class_scores = y_pred[range(batch_size), y.T]  # 1x500
+    # print(correct_class_scores.shape)
+    correct_class_scores = np.reshape(correct_class_scores, (batch_size, 1))  # 500x1
+    mergin = y_pred - correct_class_scores + 1  # 500x10
+    mergin[range(batch_size), y.flatten()] = 0  # 500x10
+    # loss += np.sum(mergin) / batch_size + reg * np.sum(W * W)
+    above_zero_array = (mergin > 0).astype(int)
+    loss += np.sum(above_zero_array * mergin) / batch_size + reg * np.sum(W * W)
+    # above_zero_num_array = np.sum(above_zero_array * X, axis=0).reshape(W.shape)
+    # print(above_zero_num_array)
+    dW += np.dot(above_zero_array.T, X)
+    # dW += above_zero_num_array
+    above_zero_num_array = np.sum(above_zero_array, axis=1).reshape((batch_size, 1))
+    delta_W = delta_W[y] - above_zero_num_array * X
+    tile_array = np.tile(np.array(range(10)), (batch_size, 1)).T
+    tile_array = (tile_array == y).astype(int)
+    dW += np.dot(tile_array, delta_W)
+    dW /= batch_size
+    dW += reg * W
     #############################################################################
     #                             END OF YOUR CODE                              #
     #############################################################################

@@ -129,5 +129,5 @@ class LinearSVM(LinearClassifier):
     """ A subclass that uses the Multiclass SVM loss function """
 
     def loss(self, X_batch, y_batch, reg):
+        # return svm_loss_vectorized(self.W, X_batch, y_batch, reg)
         return svm_loss_vectorized(self.W, X_batch, y_batch, reg)
-        # return svm_loss_naive(self.W, X_batch, y_batch, reg)
