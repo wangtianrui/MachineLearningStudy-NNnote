@@ -2,7 +2,9 @@ from __future__ import print_function
 
 import numpy as np
 import matplotlib.pyplot as plt
-# from past.builtins import xrange 
+
+
+# from past.builtins import xrange
 
 
 class TwoLayerNet(object):
@@ -77,7 +79,8 @@ class TwoLayerNet(object):
         # Store the result in the scores variable, which should be an array of      #
         # shape (N, C).                                                             #
         #############################################################################
-        pass
+        fc1 = self.relu(np.dot(X, W1) + b1)
+        scores = np.dot(fc1, W2) + b2
         #############################################################################
         #                              END OF YOUR CODE                             #
         #############################################################################
@@ -94,7 +97,12 @@ class TwoLayerNet(object):
         # in the variable loss, which should be a scalar. Use the Softmax           #
         # classifier loss.                                                          #
         #############################################################################
-        pass
+        y_one_hot = np.zeros((N, W2.shape[1]))
+        print(y_one_hot)
+
+        y_one_hot[range(N), y] = 1
+        print(y_one_hot)
+        loss = np.sum(y_one_hot * np.log(scores) + (1 - y_one_hot) * np.log(1 - scores)) / N
         #############################################################################
         #                              END OF YOUR CODE                             #
         #############################################################################
@@ -216,3 +224,10 @@ class TwoLayerNet(object):
         ###########################################################################
 
         return y_pred
+
+    def sigmoid(self, x):
+        return 1.0 / (1.0 + np.exp(-x))
+
+    def relu(self, x):
+        x[x <= 0] = 0
+        return x
