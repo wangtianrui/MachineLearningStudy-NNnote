@@ -99,11 +99,9 @@ class TwoLayerNet(object):
         softmax = np.exp(scores) / (np.sum(np.exp(scores), axis=1).reshape(N, 1))
         y_one_hot = np.zeros((N, W2.shape[1]))
         y_one_hot[range(N), y] = 1
-        print(y_one_hot * softmax)
-        loss = - np.sum(y_one_hot * np.log(softmax)zou
-        ) / N
-        loss += reg * np.sum(W2 * W2)
-        print(loss)
+        loss = - np.sum(y_one_hot * np.log(softmax)) / N
+        loss += 0.5 * reg * (np.sum(W2 * W2) + np.sum(W1 * W1))
+        # print(loss)
         #############################################################################
         #                              END OF YOUR CODE                             #
         #############################################################################
@@ -115,7 +113,16 @@ class TwoLayerNet(object):
         # and biases. Store the results in the grads dictionary. For example,       #
         # grads['W1'] should store the gradient on W1, and be a matrix of same size #
         #############################################################################
-        pass
+        softmax_sub_one_hot = softmax - y_one_hot
+        grads['W2'] = np.dot(softmax_sub_one_hot.T / N, fc1).T + reg * W2
+        grads['b2'] = np.mean(softmax_sub_one_hot, axis=0)
+        # grads['W1'] = np.dot(X.T, np.dot(softmax_sub_one_hot, W2.T)) / N + reg * W1
+        relu_bp = np.dot(softmax_sub_one_hot, W2.T)
+        # print(relu_bp)
+        # relu_bp[relu_bp <= 0] = 0
+        relu_bp[fc1 <= 0] = 0
+        grads['W1'] = np.dot(X.T, relu_bp) / N + reg * W1
+        grads['b1'] = np.mean(relu_bp, axis=0)
         #############################################################################
         #                              END OF YOUR CODE                             #
         #############################################################################
@@ -159,7 +166,9 @@ class TwoLayerNet(object):
             # TODO: Create a random minibatch of training data and labels, storing  #
             # them in X_batch and y_batch respectively.                             #
             #########################################################################
-            pass
+            random_choice_index = np.random.choice(num_train, batch_size)
+            X_batch = X[random_choice_index]
+            y_batch = y[random_choice_index]
             #########################################################################
             #                             END OF YOUR CODE                          #
             #########################################################################
@@ -174,12 +183,15 @@ class TwoLayerNet(object):
             # using stochastic gradient descent. You'll need to use the gradients   #
             # stored in the grads dictionary defined above.                         #
             #########################################################################
-            pass
+            self.params['W1'] -= learning_rate * grads['W1']
+            self.params['W2'] -= learning_rate * grads['W2']
+            self.params['b1'] -= learning_rate * grads['b1']
+            self.params['b2'] -= learning_rate * grads['b2']
             #########################################################################
             #                             END OF YOUR CODE                          #
             #########################################################################
 
-            if verbose and it % 100 == 0:
+            if verbose and it % 1000 == 0:
                 print('iteration %d / %d: loss %f' % (it, num_iters, loss))
 
             # Every epoch, check train and val accuracy and decay learning rate.
@@ -219,7 +231,9 @@ class TwoLayerNet(object):
         ###########################################################################
         # TODO: Implement this function; it should be VERY simple!                #
         ###########################################################################
-        pass
+        fc1 = self.relu(np.dot(X, self.params['W1']) + self.params['b1'])
+        softmax = np.dot(fc1, self.params['W2']) + self.params['b2']
+        y_pred = np.argmax(softmax, axis=1)
         ###########################################################################
         #                              END OF YOUR CODE                           #
         ###########################################################################
