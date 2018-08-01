@@ -88,7 +88,6 @@ class TwoLayerNet(object):
         # If the targets are not given then jump out, we're done
         if y is None:
             return scores
-
         # Compute the loss
         loss = None
         #############################################################################
@@ -97,12 +96,14 @@ class TwoLayerNet(object):
         # in the variable loss, which should be a scalar. Use the Softmax           #
         # classifier loss.                                                          #
         #############################################################################
+        softmax = np.exp(scores) / (np.sum(np.exp(scores), axis=1).reshape(N, 1))
         y_one_hot = np.zeros((N, W2.shape[1]))
-        print(y_one_hot)
-
         y_one_hot[range(N), y] = 1
-        print(y_one_hot)
-        loss = np.sum(y_one_hot * np.log(scores) + (1 - y_one_hot) * np.log(1 - scores)) / N
+        print(y_one_hot * softmax)
+        loss = - np.sum(y_one_hot * np.log(softmax)zou
+        ) / N
+        loss += reg * np.sum(W2 * W2)
+        print(loss)
         #############################################################################
         #                              END OF YOUR CODE                             #
         #############################################################################
