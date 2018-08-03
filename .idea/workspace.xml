@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/two_layer_net.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/two_layer_net.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLActualCombat/apitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLActualCombat/apitest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/FullyConnectedNets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/FullyConnectedNets.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logistic_regression.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/logistic_regression.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,13 +77,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="neural_net.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="neural_net.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+            <state relative-caret-position="541">
+              <caret line="124" column="29" lean-forward="true" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layers.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,7 +116,7 @@
       <file leaf-file-name="apitest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
+            <state relative-caret-position="1050">
               <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -194,6 +197,7 @@
         <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment4/homework/svm.ipynb" />
         <option value="$PROJECT_DIR$/MLActualCombat/apitest.py" />
         <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py" />
+        <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py" />
       </list>
     </option>
   </component>
@@ -207,8 +211,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1720" />
+    <option name="y" value="101" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -268,6 +272,40 @@
               <item name="DSVC" type="462c0819:PsiDirectoryNode" />
               <item name="assignment5" type="462c0819:PsiDirectoryNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="DSVC" type="462c0819:PsiDirectoryNode" />
+              <item name="classifiers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineLearningStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineLearningStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="2018暑假学习" type="462c0819:PsiDirectoryNode" />
+              <item name="DSVC" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineLearningStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineLearningStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="2018暑假学习" type="462c0819:PsiDirectoryNode" />
+              <item name="DSVC" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment6" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineLearningStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineLearningStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="2018暑假学习" type="462c0819:PsiDirectoryNode" />
+              <item name="DSVC" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment6" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork" type="462c0819:PsiDirectoryNode" />
+              <item name="DSVC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineLearningStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineLearningStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="2018暑假学习" type="462c0819:PsiDirectoryNode" />
+              <item name="DSVC" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment6" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork" type="462c0819:PsiDirectoryNode" />
               <item name="DSVC" type="462c0819:PsiDirectoryNode" />
               <item name="classifiers" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -611,7 +649,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -620,7 +659,7 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3293348" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29116684" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.24423338" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30383795" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20988539" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -647,7 +686,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python/Lib/site-packages/sklearn/feature_extraction/dict_vectorizer.py" />
     <entry file="file://$PROJECT_DIR$/FeatureExtraction/txtExtraction.py" />
     <entry file="file://$PROJECT_DIR$/FeatureExtraction/README.md" />
     <entry file="file://$PROJECT_DIR$/FeatureExtraction/FeatureFilter.py" />
@@ -938,7 +976,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
+        <state relative-caret-position="1050">
           <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
@@ -948,10 +986,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        <state relative-caret-position="541">
+          <caret line="124" column="29" lean-forward="true" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
