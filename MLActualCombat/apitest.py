@@ -35,8 +35,18 @@ def testThreadingLock():
 
 if __name__ == "__main__":
     # testThreadingLock()
-    array1 = np.array([[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]])
-    array3 = np.array([[0], [1], [2], [3], [4]])
-    array2 = (3 == array1).astype(int)
-    print(array1 * array1)
-    print(array2)
+    # array1 = np.array([[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]])
+    # array3 = np.array([[0], [1], [2], [3], [4]])
+    # array2 = (3 == array1).astype(int)
+    # print(array1 * array1)
+    # print(array2)
+    # print(np.random.randint(0,10,[5,5]))
+    array1=np.array([[1,2,3],
+                      [4,5,6],
+                      [7,8,9]])
+    array2 = np.array([[11,12,13],
+                      [14,15,16],
+                      [17,18,19]])
+    print(np.dot(array1,array2))
+    print(np.dot(array2,array1))
+    print(np.dot(array2,array1).dot(array2))

@@ -44,7 +44,7 @@ class TwoLayerNet(object):
         self.params['W2'] = std * np.random.randn(hidden_size, output_size)
         self.params['b2'] = np.zeros(output_size)
 
-    def loss(self, X, y=None, reg=0.0):
+    def loss(self, X, y=None, reg=0.0, dropout=-1):
         """
         Compute the loss and gradients for a two layer fully connected neural
         network.
@@ -114,6 +114,8 @@ class TwoLayerNet(object):
         # grads['W1'] should store the gradient on W1, and be a matrix of same size #
         #############################################################################
         softmax_sub_one_hot = softmax - y_one_hot
+        if dropout != -1:
+            softmax_sub_one_hot = softmax_sub_one_hot * dropout
         grads['W2'] = np.dot(softmax_sub_one_hot.T / N, fc1).T + reg * W2
         grads['b2'] = np.mean(softmax_sub_one_hot, axis=0)
         # grads['W1'] = np.dot(X.T, np.dot(softmax_sub_one_hot, W2.T)) / N + reg * W1
@@ -132,7 +134,7 @@ class TwoLayerNet(object):
     def train(self, X, y, X_val, y_val,
               learning_rate=1e-3, learning_rate_decay=0.95,
               reg=5e-6, num_iters=100,
-              batch_size=200, verbose=False):
+              batch_size=200, verbose=False, drop=0):
         """
         Train this neural network using stochastic gradient descent.
 
@@ -158,6 +160,8 @@ class TwoLayerNet(object):
         train_acc_history = []
         val_acc_history = []
 
+        class_num = self.params['b2'].shape[0]
+
         for it in range(num_iters):
             X_batch = None
             y_batch = None
@@ -174,7 +178,14 @@ class TwoLayerNet(object):
             #########################################################################
 
             # Compute loss and gradients using the current minibatch
-            loss, grads = self.loss(X_batch, y=y_batch, reg=reg)
+
+            if drop != 0:
+                dropout = np.random.randint(0, 9, size=[batch_size, class_num])
+                dropout[dropout < 10 * drop] = 0
+                dropout[dropout >= 10 * drop] = 1
+                loss, grads = self.loss(X_batch, y=y_batch, reg=reg, dropout=dropout)
+            else:
+                loss, grads = self.loss(X_batch, y=y_batch, reg=reg)
             loss_history.append(loss)
 
             #########################################################################
@@ -183,6 +194,7 @@ class TwoLayerNet(object):
             # using stochastic gradient descent. You'll need to use the gradients   #
             # stored in the grads dictionary defined above.                         #
             #########################################################################
+            # print(dropout.shape)  49000x10
             self.params['W1'] -= learning_rate * grads['W1']
             self.params['W2'] -= learning_rate * grads['W2']
             self.params['b1'] -= learning_rate * grads['b1']
