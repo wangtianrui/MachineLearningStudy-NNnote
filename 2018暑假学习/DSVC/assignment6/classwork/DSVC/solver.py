@@ -121,7 +121,7 @@ class Solver(object):
         self.y_val = data['y_val']
 
         # Unpack keyword arguments
-        self.update_rule = kwargs.pop('update_rule', 'sgd')
+        self.update_rule = kwargs.pop('update_rule', 'sgd')  #第二个参数是在没有赋值时调用的
         self.optim_config = kwargs.pop('optim_config', {})
         self.lr_decay = kwargs.pop('lr_decay', 1.0)
         self.batch_size = kwargs.pop('batch_size', 100)

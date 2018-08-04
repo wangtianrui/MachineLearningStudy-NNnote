@@ -22,7 +22,7 @@ class TwoLayerNet(object):
     self.params that maps parameter names to numpy arrays.
     """
 
-    def __init__(self, input_dim=3*32*32, hidden_dim=100, num_classes=10,
+    def __init__(self, input_dim=3 * 32 * 32, hidden_dim=100, num_classes=10,
                  weight_scale=1e-3, reg=0.0):
         """
         Initialize a new network.
@@ -47,11 +47,13 @@ class TwoLayerNet(object):
         # weights and biases using the keys 'W1' and 'b1' and second layer weights #
         # and biases using the keys 'W2' and 'b2'.                                 #
         ############################################################################
-        pass
+        self.params["W1"] = np.random.normal(size=(input_dim, hidden_dim), scale=weight_scale)
+        self.params["W2"] = np.random.normal(size=(hidden_dim, num_classes), scale=weight_scale)
+        self.params["b1"] = np.zeros(hidden_dim)
+        self.params["b2"] = np.zeros(num_classes)
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
-
 
     def loss(self, X, y=None):
         """
@@ -77,7 +79,13 @@ class TwoLayerNet(object):
         # TODO: Implement the forward pass for the two-layer net, computing the    #
         # class scores for X and storing them in the scores variable.              #
         ############################################################################
-        pass
+        input_dim = self.params["W1"].shape[0]
+        X = X.reshape(-1, input_dim)
+        fc1 = np.dot(X, self.params["W1"]) + self.params["b1"]
+
+        fc1[fc1 < 0] = 0
+        scores = np.dot(fc1, self.params["W2"]) + self.params["b2"]
+        # print(scores)
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
@@ -97,7 +105,19 @@ class TwoLayerNet(object):
         # automated tests, make sure that your L2 regularization includes a factor #
         # of 0.5 to simplify the expression for the gradient.                      #
         ############################################################################
-        pass
+        input_num = y.shape[0]
+        softmax = np.exp(scores) / np.sum(np.exp(scores), axis=1).reshape(scores.shape[0], 1)
+        one_hot = np.zeros((input_num, self.params["b2"].shape[0]))
+        one_hot[range(y.shape[0]), y] = 1
+        # print(one_hot)
+        loss = -np.sum(one_hot * np.log(softmax)) / input_num + \
+               0.5 * self.reg * (np.sum(self.params["W1"] * self.params["W1"]) +
+                                 np.sum(self.params["W2"] * self.params["W2"]))
+        grads["W2"] = fc1.T.dot(softmax - one_hot) / input_num + self.reg * self.params["W2"]
+        grads["b2"] = np.mean((softmax - one_hot), axis=0)
+        grads["W1"] = X.T.dot((softmax - one_hot).dot(self.params["W2"].T) / input_num
+                              * (fc1 != 0).astype(int)) + self.reg * self.params["W1"]
+        grads["b1"] = np.mean((softmax - one_hot).dot(self.params["W2"].T) * (fc1 != 0).astype(int), axis=0)
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
@@ -121,7 +141,7 @@ class FullyConnectedNet(object):
     self.params dictionary and will be learned using the Solver class.
     """
 
-    def __init__(self, hidden_dims, input_dim=3*32*32, num_classes=10,
+    def __init__(self, hidden_dims, input_dim=3 * 32 * 32, num_classes=10,
                  dropout=0, use_batchnorm=False, reg=0.0,
                  weight_scale=1e-2, dtype=np.float32, seed=None):
         """
@@ -163,7 +183,30 @@ class FullyConnectedNet(object):
         # beta2, etc. Scale parameters should be initialized to one and shift      #
         # parameters should be initialized to zero.                                #
         ############################################################################
-        pass
+
+        self.Omega_names = []
+        self.Biase_names = []
+        for i in range(self.num_layers):
+            self.Omega_names.append(("W" + str(i + 1)))
+            if i == 0:
+                self.params[self.Omega_names[i]] = \
+                    np.random.normal(size=(input_dim, hidden_dims[i]), scale=weight_scale)
+            elif i == self.num_layers - 1:
+                self.params[self.Omega_names[i]] = \
+                    np.random.normal(size=(hidden_dims[i - 1], num_classes), scale=weight_scale)
+            else:
+                self.params[self.Omega_names[i]] = \
+                    np.random.normal(size=(hidden_dims[i - 1], hidden_dims[i]), scale=weight_scale)
+            self.Biase_names.append(("b" + str(i + 1)))
+            if i != self.num_layers - 1:
+                self.params[self.Biase_names[i]] = np.zeros(hidden_dims[i])
+            else:
+                self.params[self.Biase_names[i]] = np.zeros(num_classes)
+        # for index in self.Omega_names:
+        #     print(index, self.params[index].shape)
+        # for index in self.Biase_names:
+        #     print(index, self.params[index].shape)
+
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
@@ -189,7 +232,6 @@ class FullyConnectedNet(object):
         # Cast all parameters to the correct datatype
         for k, v in self.params.items():
             self.params[k] = v.astype(dtype)
-
 
     def loss(self, X, y=None):
         """
@@ -221,7 +263,9 @@ class FullyConnectedNet(object):
         # self.bn_params[1] to the forward pass for the second batch normalization #
         # layer, etc.                                                              #
         ############################################################################
-        pass
+        scores = X
+        for index in range(self.num_layers):
+            scores = scores.dot(self.params[self.Omega_names[index]]) + self.params[self.Biase_names[index]]
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################

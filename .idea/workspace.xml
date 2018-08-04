@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9db8e86-a9d6-4c54-8358-cdbcbddb320e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/two_layer_net.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/two_layer_net.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/classifiers/fc_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/classifiers/fc_net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/solver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/FullyConnectedNets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/FullyConnectedNets.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,65 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment3/homework/DSVC/classifiers/logistic_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-              <folding>
-                <element signature="e#15#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linear_classifier.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment4/homework/DSVC/classifiers/linear_classifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2079">
-              <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linear_svm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment4/homework/DSVC/classifiers/linear_svm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gradient_check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment4/homework/DSVC/gradient_check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2436">
-              <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="svm.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment4/homework/svm.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="neural_net.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="124" column="29" lean-forward="true" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+            <state relative-caret-position="352">
+              <caret line="118" column="65" selection-start-line="118" selection-start-column="65" selection-end-line="118" selection-end-column="65" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -89,25 +35,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layers.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+            <state relative-caret-position="6714">
+              <caret line="555" column="28" selection-start-line="555" selection-start-column="28" selection-end-line="555" selection-end-column="28" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gradient_check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/gradient_check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,6 +68,66 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="cnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/classifiers/cnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1386">
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fc_net.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/classifiers/fc_net.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="256" column="24" lean-forward="true" selection-start-line="256" selection-start-column="24" selection-end-line="256" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="solver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/solver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="786">
+              <caret line="235" column="30" lean-forward="true" selection-start-line="235" selection-start-column="30" selection-end-line="235" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="optim.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/optim.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://E:/Anaconda3/envs/mypython/Lib/site-packages/numpy/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -148,6 +142,7 @@
       <find>##</find>
       <find>print</find>
       <find>self.W</find>
+      <find>_step</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,6 +193,8 @@
         <option value="$PROJECT_DIR$/MLActualCombat/apitest.py" />
         <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py" />
         <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py" />
+        <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/solver.py" />
+        <option value="$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/classifiers/fc_net.py" />
       </list>
     </option>
   </component>
@@ -659,7 +656,7 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3293348" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29116684" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.24423338" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20988539" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18051577" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -686,31 +683,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FeatureExtraction/txtExtraction.py" />
-    <entry file="file://$PROJECT_DIR$/FeatureExtraction/README.md" />
-    <entry file="file://$PROJECT_DIR$/FeatureExtraction/FeatureFilter.py" />
-    <entry file="file://E:/python3.5/Lib/site-packages/tensorflow/python/ops/array_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33220">
-          <caret line="1534" column="27" selection-start-line="1534" selection-start-column="27" selection-end-line="1534" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/python3.5/Lib/site-packages/sklearn/svm/classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16082">
-          <caret line="740" column="6" selection-start-line="740" selection-start-column="6" selection-end-line="740" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-Boston-LinearRegressorSVM.py" />
-    <entry file="file://E:/python3.5/Lib/site-packages/sklearn/svm/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="186" column="25" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/k-neighbor/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -967,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/two_layer_net.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLActualCombat/apitest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -984,20 +949,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/two_layer_net.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/classifiers/cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1386">
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/mypython/Lib/site-packages/numpy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6714">
+          <caret line="555" column="28" selection-start-line="555" selection-start-column="28" selection-end-line="555" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="352" column="8" selection-start-line="352" selection-start-column="8" selection-end-line="352" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/optim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment5/homework/DSVC/classifiers/neural_net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="124" column="29" lean-forward="true" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+        <state relative-caret-position="352">
+          <caret line="118" column="65" selection-start-line="118" selection-start-column="65" selection-end-line="118" selection-end-column="65" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/layers.py">
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/solver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="235" column="30" lean-forward="true" selection-start-line="235" selection-start-column="30" selection-end-line="235" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018暑假学习/DSVC/assignment6/classwork/DSVC/classifiers/fc_net.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+          <caret line="256" column="24" lean-forward="true" selection-start-line="256" selection-start-column="24" selection-end-line="256" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
