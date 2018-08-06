@@ -203,7 +203,7 @@ class FullyConnectedNet(object):
             else:
                 self.params[self.Biase_names[i]] = np.zeros(num_classes)
         # for index in self.Omega_names:
-        #     print(index, self.params[index].shape)
+        #     print(index, self.params[index])
         # for index in self.Biase_names:
         #     print(index, self.params[index].shape)
 
@@ -263,9 +263,17 @@ class FullyConnectedNet(object):
         # self.bn_params[1] to the forward pass for the second batch normalization #
         # layer, etc.                                                              #
         ############################################################################
-        scores = X
+        # print(X.shape)
+        scores = X.reshape(-1, self.params[self.Omega_names[0]].shape[0])
+
+        W_2 = 0
+        layer_inputs = []
+
         for index in range(self.num_layers):
+            layer_inputs.append(scores)
+            # print(index, scores.shape,self.params[self.Omega_names[index]].shape)
             scores = scores.dot(self.params[self.Omega_names[index]]) + self.params[self.Biase_names[index]]
+            W_2 += np.sum(self.params[self.Omega_names[index]] * self.params[self.Omega_names[index]])
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
@@ -288,7 +296,25 @@ class FullyConnectedNet(object):
         # automated tests, make sure that your L2 regularization includes a factor #
         # of 0.5 to simplify the expression for the gradient.                      #
         ############################################################################
-        pass
+        num_train = y.shape[0]
+        num_class = self.params[self.Biase_names[-1]].shape[0]
+        softmax = np.exp(scores) / np.sum(np.exp(scores), axis=1).reshape(num_train, 1)
+        one_hot = np.zeros((num_train, num_class))
+        one_hot[range(num_train), y] = 1
+        loss = -np.sum(one_hot * np.log(softmax)) / num_train + 0.5 * self.reg * W_2
+
+        delta_X = None
+
+        delta_softmax_f = (softmax - one_hot) / num_train
+
+        last_delta = delta_softmax_f
+
+        for index in reversed(range(self.num_layers)):
+            grads[self.Omega_names[index]] = layer_inputs[index].T.dot(last_delta) + \
+                                             self.reg * self.params[self.Omega_names[index]]
+            grads[self.Biase_names[index]] = np.sum(last_delta, axis=0)
+            last_delta = last_delta.dot(self.params[self.Omega_names[index]].T)
+            # None
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
