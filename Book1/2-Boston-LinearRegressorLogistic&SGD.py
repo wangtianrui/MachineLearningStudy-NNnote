@@ -23,8 +23,8 @@ ss_y = StandardScaler()
 x_train = ss_x.fit_transform(x_train)
 x_test = ss_x.transform(x_test)
 
-y_train = ss_y.fit_transform(y_train)
-y_test = ss_y.transform(y_test)
+y_train = ss_y.fit_transform(y_train.reshape(-1,1))
+y_test = ss_y.transform(y_test.reshape(-1,1))
 
 lr = LinearRegression()
 lr.fit(x_train, y_train)
